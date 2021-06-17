@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico.ico" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <section class="hero is-info is-small">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <span class="navbar-item">
+                <a class="button has-text-white is-size-4 is-inverted has-background-info-dark">
+                  <span class="icon">
+                    <i class="fab fa-dyalog"></i>
+                  </span>
+                  <span>Dial n' Dine</span>
+                </a>
+              </span>
+              <span class="navbar-burger" data-target="navbarMenuHeroB">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active"> Home </a>
+                <a class="navbar-item"> Tools </a>
+                <a class="navbar-item"> Forms </a>
+                <span class="navbar-item">
+                  <a href="https://join.slack.com/t/dialndine/shared_invite/zt-rujxd0k2-BaeGPsJYldCA5zfBAHB3Mg" target="_blank" class="button is-info is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-slack"></i>
+                    </span>
+                    <span>Our Work-Space</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">Our Cloud Office</p>
+          <p class="subtitle is-size-6"><i>"The art of Performance"</i></p>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-centered has-background-info-dark">
+          <div class="container">
+            <ul>
+              <li class="tab is-active" onclick="openTab(event,'over')">
+                <a>Overview</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'perf')">
+                <a>Performances</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'proj')">
+                <a>Projects</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'incent')">
+                <a>Incentives</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'sched')">
+                <a>Schedules</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'news')">
+                <a>Newsletter</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <div class="container section">
+      <div id="over" class="content-tab">
+        <article class="media notification is-info">
+          <div class="content">
+            <h1 class="title is-size-4 center">
+              <i class="fas fa-users"></i>&nbsp;Overview
+            </h1>
+            <p class="is-size-6 center">
+              In today's business, customer service is crucial. People can
+              tolerate product imperfections as long as the company is ready to
+              go above and beyond to satisfy their needs. No wonder that
+              organizations in various industries invest in call centers. This
+              is a great way to provide top-notch customer service. Not only
+              allows your team to easily connect with clients but provides you
+              with the best tools to control and improve their work.
+            </p>
+          </div>
+        </article>
+
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <article class="message is-danger">
+              <div class="message-body">
+                <p class="subtitle has-text-danger"><b>Scheduling</b></p>
+                <p>
+                  Having the ability to work flexible hours empowers your
+                  employees. They can have better control of their lives in
+                  these uncertain times.
+                  <img
+                    src="./images/schedule.png"
+                    style="max-width: 220px"
+                    class="center-img"
+                  />
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-one-third">
+            <article class="message is-info">
+              <div class="message-header center">
+                <p>Performances</p>
+              </div>
+              <div class="message-body">
+                <p>
+                  Key performance indicators (KPIs) are measurable, monitorable,
+                  and visible signs that a task has been achieved or not. KPIs
+                  are one of the most powerful performance management tools in
+                  growing our call center when properly used.
+                </p>
+                <img
+                  src="./images/performances.png"
+                  style="max-width: 235px"
+                  class="center-img"
+                />
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-one-third">
+            <article class="message is-info">
+              <div class="message-header center">
+                <p>Team</p>
+              </div>
+              <div class="message-body">
+               <p> Healthy teams have team members that feel good about each other.
+                This in turn improves <a>customer service,</a> increases
+                customer satisfaction, and builds strong customer loyalty. More
+                important, it boosts profits.Strong teams focus on results — not
+                processes, reaching team goals and completing activities
+                designed to achieve them.Progress must be assesed toward
+                achieving team goals periodically. This includes identifying
+                barriers to achieving these goals.</p><br>
+                <div class="columns has-background-primary-light">
+                  <div class="column center">
+                    <i class="fas fa-2x fa-users"></i>
+                  </div>
+                  <div class="column center">
+                    <i class="far fa-2x fa-file-excel"></i></i>
+                  </div>
+                  <div class="column center">
+                    <i class="fas fa-2x fa-signal"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-two-thirds">
+            <article class="message is-info">
+              <div class="message-body">
+                <p class="subtitle has-text-info"><b>Incentives</b></p>
+                Working as a <strong> center agent</strong> can seem like a
+                tedious, thankless job. In some cases, agents spend hours
+                talking with people who don’t want to be on the phone any more
+                than the agents themselves do. Even in the best circumstances —
+                where customers are calling to purchase high-demand products —
+                not only can each day look the same…each hour can as well. So
+                it’s not surprising that some call center agents take an
+                <em>“eight and skate”</em> approach to their shifts. It’s
+                equally unsurprising that some <strong>call centers</strong> are
+                <u>satisfied</u> to settle for employees who coast through the
+                days as long as they’re not directly alienating customers. But
+                difficult is far from impossible. It’s a matter of identifying
+                the behaviors that impact the bottom line and then finding the
+                right way to implement a call center incentive program
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-one-third">
+            <article class="message is-info">
+              <div class="message-header center">
+                <p>Projects</p>
+              </div>
+              <div class="message-body">
+                <p>
+                  A better way for agents to grow is by letting them know where
+                  they excel and needs to improve?
+                </p>
+                <br />
+                <img
+                  src="./images/projects.png"
+                  style="max-width: 209px"
+                  class="center-img"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <!---------------------End of Overview---------------------->
+
+      <div id="perf" class="content-tab" style="display: none">
+        <div class="columns">
+
+          <div class="column is-half">
+            <article class="message is-link">
+              <div class="message-header center">
+                <p>Agents Overall Performances</p>&nbsp;
+                <button class="button is-primary">View</button>
+              </div>
+              <div class="message-body">
+        <div class="google-data-studio">
+          <iframe width="600" height="350" src="https://datastudio.google.com/embed/reporting/d262457c-400c-44fa-b9a8-28250071e3c6/page/8z9AC" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+      </article>
+      </div>
+
+          <div class="column is-half">
+            <article class="message is-link">
+              <div class="message-header center">
+                <p>Call Center Credits</p>&nbsp;
+                <button class="button is-primary">View</button>
+              </div>
+              <div class="message-body">
+        <div class="google-data-studio">
+          <iframe width="600" height="1200" src="https://datastudio.google.com/embed/reporting/54d573f2-fe3a-463a-8b77-d3f11ee89488/page/CppnB" frameborder="0" style="border:0;" allowfullscreen></iframe></div>
+        </div>
+      </article>
+      </div>
+    </div>
+
+      <div class="columns">
+          <div class="column is-half">
+            <article class="message is-link">
+              <div class="message-header center">
+                <p>Incomplete Calls</p>&nbsp;
+                <button class="button is-primary">View</button>
+              </div>
+              <div class="message-body">
+        <div class="google-data-studio">
+          <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+      </article>
+      </div>
+
+          <div class="column is-half">
+            <article class="message is-link">
+              <div class="message-header center">
+                <p>Warnings Tracker</p>&nbsp;
+                <button class="button is-primary">View</button>
+              </div>
+              <div class="message-body">
+        <div class="google-data-studio">
+          <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+      </article>
+      </div>
+    </div>
+
+      </div>
+<!-------------------------End of performances----------------------------------------->
+
+      <div id="proj" class="content-tab" style="display: none">
+        <p>
+          test7<br />
+          Overview Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div id="incent" class="content-tab" style="display: none">
+        <p>
+          test8<br />
+          Overview Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div id="sched" class="content-tab" style="display: none">
+        <p>
+          test2<br />
+          Details Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div id="news" class="content-tab" style="display: none">
+        <p>
+          test3 <br />
+          Specification Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer has-background-link-light">
+      <div class="content has-text-centered">
+        <p>
+          <strong>MyKPI</strong> by
+          <a href="https://github.com/Sands-45">Sands QA</a>. The source code is
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. All
+          Rights Reserved, Copywrite&copy;
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >Dial n' Dine 2021</a
+          >.
+        </p>
+        <i class="fab fa-slack"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-whatsapp"></i>
+        <p>
+          Powered by
+          <a href="#" target="_blank" class="w3-hover-text-blue">Sands_45</a>
+        </p>
+      </div>
+    </footer>
+    <!-------------End of Page----------------->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/873b5a86ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
