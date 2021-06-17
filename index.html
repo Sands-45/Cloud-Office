@@ -63,22 +63,22 @@
         <div class="container">
           <ul>
             <li class="tab is-active" onclick="openTab(event,'over')">
-              <a>Overview</a>
+              <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
             </li>
             <li class="tab" onclick="openTab(event,'perf')">
-              <a>Performances</a>
+              <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
             </li>
             <li class="tab" onclick="openTab(event,'proj')">
-              <a>Projects</a>
+              <a><i class="fas fa-project-diagram"></i>&nbsp;Projects</a>
             </li>
             <li class="tab" onclick="openTab(event,'incent')">
-              <a>Incentives</a>
+              <a><i class="fas fa-award"></i>&nbsp;Incentives</a>
             </li>
             <li class="tab" onclick="openTab(event,'sched')">
-              <a>Schedules</a>
+              <a><i class="fas fa-calendar-alt"></i>&nbsp;Schedules</a>
             </li>
             <li class="tab" onclick="openTab(event,'news')">
-              <a>Newsletter</a>
+              <a><i class="far fa-newspaper"></i>&nbsp;Newsletter</a>
             </li>
           </ul>
         </div>
@@ -220,7 +220,7 @@
               <input id="element-perf" type="checkbox" />
 
               <!-- Modal -->
-              <div class="modal" id="perf">
+              <div class="modal is-huge" id="perf">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                   <iframe width="600" height="700"
@@ -262,138 +262,75 @@
               </div>
             </div>
 
-        <div class="message-body">
-          <div class="google-data-studio">
-            <iframe width="600" height="1200"
-              src="https://datastudio.google.com/embed/reporting/54d573f2-fe3a-463a-8b77-d3f11ee89488/page/CppnB"
-              frameborder="0" style="border:0;" allowfullscreen></iframe>
-          </div>
+            <div class="message-body">
+              <div class="google-data-studio">
+                <iframe width="600" height="1200"
+                  src="https://datastudio.google.com/embed/reporting/54d573f2-fe3a-463a-8b77-d3f11ee89488/page/CppnB"
+                  frameborder="0" style="border:0;" allowfullscreen></iframe>
+              </div>
+            </div>
+          </article>
         </div>
-        </article>
-      </div>
       </div>
 
-    <div class="columns">
-      <div class="column is-half">
-        <article class="message is-link">
-          <div class="message-header center">
-            <p>Incomplete Calls</p>&nbsp;
+      <div class="columns">
+        <div class="column is-half">
+          <article class="message is-link">
+            <div class="message-header center">
+              <p>Incomplete Calls</p>&nbsp;
 
-            <!-- Modal trigger -->
-            <label class="button is-primary" for="element-incomplete">View</label>
-            <input id="element-incomplete" type="checkbox" />
+              <!-- Modal trigger -->
+              <label class="button is-primary" for="element-incomplete">View</label>
+              <input id="element-incomplete" type="checkbox" />
 
-            <!-- Modal -->
-            <div class="modal" id="incomplete">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <iframe width="600" height="700"
+              <!-- Modal -->
+              <div class="modal" id="incomplete">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <iframe width="600" height="700"
+                    src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <label class="modal-close is-large" for="element-incomplete"></label>
+              </div>
+            </div>
+
+            <div class="message-body">
+              <div class="google-data-studio">
+                <iframe width="600" height="450"
                   src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC"
                   frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
-              <label class="modal-close is-large" for="element-incomplete"></label>
             </div>
-          </div>
+          </article>
+        </div>
 
-          <div class="message-body">
-            <div class="google-data-studio">
-              <iframe width="600" height="450"
-                src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="column is-half">
+          <article class="message is-link">
+            <div class="message-header center">
+              <p>Warnings Tracker</p>&nbsp;
+
+              <!-- Modal trigger -->
+              <label class="button is-primary" for="element-warnings">View</label>
+              <input id="element-warnings" type="checkbox" />
+
+              <!-- Modal -->
+              <div class="modal" id="warnings">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <iframe width="600" height="700"
+                    src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <label class="modal-close is-large" for="element-warnings"></label>
+              </div>
             </div>
-          </div>
-        </article>
-      </div>
 
-      <div class="column is-half">
-        <article class="message is-link">
-          <div class="message-header center">
-            <p>Warnings Tracker</p>&nbsp;
-
-            <!-- Modal trigger -->
-            <label class="button is-primary" for="element-warnings">View</label>
-            <input id="element-warnings" type="checkbox" />
-
-            <!-- Modal -->
-            <div class="modal" id="warnings">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <iframe width="600" height="700"
+            <div class="message-body">
+              <div class="google-data-studio">
+                <iframe width="600" height="450"
                   src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
                   frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-              <label class="modal-close is-large" for="element-warnings"></label>
-            </div>
-          </div>
-
-          <div class="message-body">
-            <div class="google-data-studio">
-              <iframe width="600" height="450"
-                src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-  </div>
-  <!-----------End of performances-------------->
-
-  <div id="proj" class="content-tab" style="display: none">
-    <div class="columns">
-      <div class="column  is-one-fifth">
-        <div class="card has-background-info-light">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="./images/Dial n Dine Logo.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Sands QA</p>
-                <p class="subtitle is-6">@sandsqa</p>
-              </div>
-            </div>
-            <div class="columns is-mobile">
-              <div
-                class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <code>is-three-quarters-mobile</code><br>
-                <code>is-two-thirds-tablet</code><br>
-                <code>is-half-desktop</code><br>
-                <code>is-one-third-widescreen</code><br>
-                <code>is-one-quarter-fullhd</code>
-              </div>
-              <div class="column">2</div>
-              <div class="column">3</div>
-              <div class="column">4</div>
-              <div class="column">5</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column ">
-        <div class="card">
-          <article class="media notification">
-            <figure class="media-left">
-              <span class="icon is-medium ">
-                <i class="fas fa-2x fa-project-diagram"></i>
-              </span>
-            </figure>
-            <div class="media-content">
-              <div class="content">
-                <h1 class="title is-size-4 r">Projects</h1>
-                <p class="is-size-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque optio tempore neque facere quae
-                  explicabo minus pariatur esse accusamus dignissimos.
-                </p>
               </div>
             </div>
           </article>
@@ -401,68 +338,131 @@
       </div>
 
     </div>
-  </div>
+    <!-----------End of performances-------------->
 
-  <!--------------End of projects----------------->
-  
-  <div id="incent" class="content-tab" style="display: none">
-    <p>
-      test8<br />
-      Overview Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to make a type specimen book. It has survived
-      not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in
-      the 1960s with the release of Letraset sheets containing Lorem Ipsum
-      passages, and more recently with desktop publishing software like
-      Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <!-- Modal trigger -->
-    <label class="button" for="element-toggle">Launch Modal</label>
-    <input id="element-toggle" type="checkbox" />
+    <div id="proj" class="content-tab" style="display: none">
+      <div class="columns">
+        <div class="column  is-one-fifth">
+          <div class="card has-background-info-light">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./images/Dial n Dine Logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Sands QA</p>
+                  <p class="subtitle is-6">@sandsqa</p>
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div
+                  class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                  <code>is-three-quarters-mobile</code><br>
+                  <code>is-two-thirds-tablet</code><br>
+                  <code>is-half-desktop</code><br>
+                  <code>is-one-third-widescreen</code><br>
+                  <code>is-one-quarter-fullhd</code>
+                </div>
+                <div class="column">2</div>
+                <div class="column">3</div>
+                <div class="column">4</div>
+                <div class="column">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Modal -->
-    <div class="modal" id="myModal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="image modal">
-        </p>
+        <div class="column ">
+          <div class="card">
+            <article class="media notification">
+              <figure class="media-left">
+                <span class="icon is-medium ">
+                  <i class="fas fa-2x fa-project-diagram"></i>
+                </span>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title is-size-4 r">Projects</h1>
+                  <p class="is-size-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque optio tempore neque facere quae
+                    explicabo minus pariatur esse accusamus dignissimos.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
       </div>
-      <label class="modal-close is-large" for="element-toggle"></label>
     </div>
-  </div>
 
-  <div id="sched" class="content-tab" style="display: none">
-    <p>
-      test2<br />
-      Details Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to make a type specimen book. It has survived
-      not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in
-      the 1960s with the release of Letraset sheets containing Lorem Ipsum
-      passages, and more recently with desktop publishing software like
-      Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </div>
+    <!--------------End of projects----------------->
 
-  <div id="news" class="content-tab" style="display: none">
-    <p>
-      test3 <br />
-      Specification Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to make a type specimen book. It has survived
-      not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in
-      the 1960s with the release of Letraset sheets containing Lorem Ipsum
-      passages, and more recently with desktop publishing software like
-      Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </div>
+    <div id="incent" class="content-tab" style="display: none">
+      <p>
+        test8<br />
+        Overview Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in
+        the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <!-- Modal trigger -->
+      <label class="button" for="element-toggle">Launch Modal</label>
+      <input id="element-toggle" type="checkbox" />
+
+      <!-- Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="image modal">
+          </p>
+        </div>
+        <label class="modal-close is-large" for="element-toggle"></label>
+      </div>
+    </div>
+
+    <div id="sched" class="content-tab" style="display: none">
+      <p>
+        test2<br />
+        Details Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in
+        the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+
+    <div id="news" class="content-tab" style="display: none">
+      <p>
+        test3 <br />
+        Specification Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in
+        the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
   </div>
 
   <footer class="footer has-background-link-light">
@@ -486,6 +486,7 @@
     </div>
   </footer>
   <!-------------End of Page----------------->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script src="https://kit.fontawesome.com/873b5a86ca.js" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
