@@ -340,65 +340,37 @@
     </div>
     <!-----------End of performances-------------->
 
-    <div id="proj" class="content-tab" style="display: none">
+    <div id="proj" class="content-tab is-fluid" style="display: none">
       <div class="columns">
-        <div class="column  is-one-fifth">
-          <div class="card has-background-info-light">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="./images/Dial n Dine Logo.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">Sands QA</p>
-                  <p class="subtitle is-6">@sandsqa</p>
-                </div>
-              </div>
-              <div class="columns is-mobile">
-                <div
-                  class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                  <code>is-three-quarters-mobile</code><br>
-                  <code>is-two-thirds-tablet</code><br>
-                  <code>is-half-desktop</code><br>
-                  <code>is-one-third-widescreen</code><br>
-                  <code>is-one-quarter-fullhd</code>
-                </div>
-                <div class="column">2</div>
-                <div class="column">3</div>
-                <div class="column">4</div>
-                <div class="column">5</div>
-              </div>
-            </div>
+
+        <div class="column is-three-quarters">
+          <div class="sheet is-16by9">
+            <iframe class="has-ratio" width="640" height="400"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDkxbi5_kjeUmqP0K5cMQm2NvkNPMUoRDeWxmYNmLQIsmQMsqGWkIlU0VfTShAMOnW3zyIh7ZuF_F0/pubhtml?widget=false&amp;headers=false&amp;chrome=false"
+              frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
 
-        <div class="column ">
-          <div class="card">
-            <article class="media notification">
-              <figure class="media-left">
-                <span class="icon is-medium ">
-                  <i class="fas fa-2x fa-project-diagram"></i>
-                </span>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h1 class="title is-size-4 r">Projects</h1>
-                  <p class="is-size-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque optio tempore neque facere quae
-                    explicabo minus pariatur esse accusamus dignissimos.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
+        <div class="column is-one-quarter">
+          <article class="tile is-child notification is-info">
+            <p class="title">Projects&nbsp;<i class="fas fa-project-diagram"></i></p>
+            <p class="subtitle">@dialndine</p>
+            <div class="content">
+              <p><u>#Upsell</u> <u>#Cheese</u> <u>#Complement</u></p>
+            </div>
+          </article>
+          <article class="message is-info">
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus
+              quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam,
+              et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec
+              sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque.<br><br>
+              <p class="subtitle has-text-info">Tracking Progress</p>
+              <progress class="progress has-text-danger is-info" value="45" max="100">45%</progress>
+            </div>
+          </article>
         </div>
+
 
       </div>
     </div>
@@ -406,31 +378,50 @@
     <!--------------End of projects----------------->
 
     <div id="incent" class="content-tab" style="display: none">
-      <p>
-        test8<br />
-        Overview Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book. It has survived
-        not only five centuries, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised in
-        the 1960s with the release of Letraset sheets containing Lorem Ipsum
-        passages, and more recently with desktop publishing software like
-        Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-      <!-- Modal trigger -->
-      <label class="button" for="element-toggle">Launch Modal</label>
-      <input id="element-toggle" type="checkbox" />
-
-      <!-- Modal -->
-      <div class="modal" id="myModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <p class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="image modal">
-          </p>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Vertical...</p>
+                <p class="subtitle">Top tile</p>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">...tiles</p>
+                <p class="subtitle">Bottom tile</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info">
+                <p class="title">Middle tile</p>
+                <p class="subtitle">With an image</p>
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
+          </div>
         </div>
-        <label class="modal-close is-large" for="element-toggle"></label>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Tall tile</p>
+              <p class="subtitle">With even more content</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
 
