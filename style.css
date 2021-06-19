@@ -1,5 +1,5 @@
-body{
-	background-color:lightblue;
+body {
+  background-color: lightblue;
 }
 .is-active {
   color: black;
@@ -15,25 +15,24 @@ body{
   justify-content: center;
   margin: 0 auto;
 }
-.overflow {
-  overflow: hidden;
+.transparent {
+  background-color: transparent;
 }
-.google-data-studio {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.google-data-studio iframe,
-.google-data-studio object,
-.google-data-studio embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.card-equal-height {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+}
+.card-equal-height .card-footer {
+  margin-top: auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+.card img {
+  border-radius: 0.5rem;
+  margin: 0 auto;
 }
 /*------------------------------*/
 #element-perf {
@@ -62,4 +61,77 @@ body{
 }
 #element-warnings:checked ~ #warnings {
   display: flex;
+}
+/*------------------------------------------*/
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+/*-------------------Footer----------------------*/
+.footer-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0 0 0;
+}
+
+.social-links a {
+  background: #0073d1;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 50px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-links a:hover {
+  background: #65acdb;
+  color: black;
+  text-decoration: none;
+}
+
+.social-links .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav i {
+  color: #00d1b2;
+  width: 18px;
+  height: 18px;
+  margin: 0 2px 0 -5px;
+}
+
+.footer-nav li {
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav li:first-child {
+  padding-top: 0;
+}
+
+.footer-nav a {
+  transition: 0.3s;
+  font-size: 15px;
+  color: #363636;
+}
+
+.footer-nav a:hover {
+  color: #3273dc;
+  text-decoration: none;
 }
