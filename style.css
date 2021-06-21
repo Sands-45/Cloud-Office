@@ -111,7 +111,7 @@ body {
 section {
   border-radius: 0.3rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #news img {
     max-width: 300px !important;
   }
