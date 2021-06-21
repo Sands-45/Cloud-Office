@@ -76,7 +76,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-/*-------------------Footer----------------------*/
+/*-----------------------------------------*/
 .equal-height{
   display: flex;
   flex-direction: column;
@@ -84,5 +84,15 @@ body {
 }
 .equal-height img{
   border-radius: 0.5rem;
+  margin: 0 auto;
+}
+/*-----------------------------------------*/
+#news{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#news img{
+  border-radius: 0.2rem;
   margin: 0 auto;
 }
