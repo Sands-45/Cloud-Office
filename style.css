@@ -77,22 +77,37 @@ body {
   text-align: center;
 }
 /*-----------------------------------------*/
-.equal-height{
+.equal-height {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.equal-height img{
+.equal-height img {
   border-radius: 0.5rem;
   margin: 0 auto;
 }
 /*-----------------------------------------*/
-#news{
+#news {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-#news img{
+#news img {
   border-radius: 0.2rem;
   margin: 0 auto;
+}
+/*-----------------------------------------*/
+#incentives-top {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.column,
+.columns,
+.column img,
+.container,
+.section,
+.sections,
+section {
+  border-radius: 0.3rem;
 }
