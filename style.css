@@ -108,12 +108,31 @@ body {
 .container,
 .section,
 .sections,
-section {
+section,
+article,
+.media {
   border-radius: 0.3rem;
 }
+/*--------------------------------------*/
+#top{
+  position:fixed;
+  bottom:3em;
+  right: .1em;
+  box-shadow:0 0 2em 0 rgba(0, 0, 0, .25);
+  transition:all .3s ease-in-out;
+  display: none;
+}
+/*---------------------------------------*/
 @media screen and (max-width: 800px) {
   #news img {
     max-width: 300px !important;
   }
+  #top{
+    size:20px !important;
+    padding: 5px;
+  }
+  #pro{
+    overflow: hidden !important;
+  }
 }
-  
+/*--------------------------*/
