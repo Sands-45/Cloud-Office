@@ -1,6 +1,9 @@
 body {
   background-color: lightblue;
 }
+html {
+  scroll-behavior: smooth;
+}
 .is-active {
   color: black;
 }
