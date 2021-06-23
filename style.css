@@ -35,34 +35,7 @@ body {
   border-radius: 0.5rem;
   margin: 0 auto;
 }
-/*------------------------------*/
-#element-perf {
-  display: none;
-}
-#element-perf:checked ~ #perf {
-  display: flex;
-}
-/*------------------------------*/
-#element-credits {
-  display: none;
-}
-#element-credits:checked ~ #credits {
-  display: flex;
-}
-/*------------------------------*/
-#element-incomplete {
-  display: none;
-}
-#element-incomplete:checked ~ #incomplete {
-  display: flex;
-}
-/*------------------------------*/
-#element-warnings {
-  display: none;
-}
-#element-warnings:checked ~ #warnings {
-  display: flex;
-}
+
 /*------------------------------*/
 #element-compliments {
   display: none;
