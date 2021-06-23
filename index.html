@@ -7,6 +7,7 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="shortcut icon" href="./images/favicon.ico.ico" />
 </head>
 
@@ -375,61 +376,50 @@
 
         <div class="columns">
           <div class="column is-half">
-            <article class="message is-info">
-              <div class="message-header center">
-                <p>Agents Overall Performances</p>&nbsp;
-
-                <!-- Modal trigger -->
-                <label class="button is-dark" for="element-perf">View</label>
-                <input id="element-perf" type="checkbox" />
-
-                <!-- Modal -->
-                <div class="modal is-huge" id="perf">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <iframe width="600" height="700" class="is-fullwidth"
-                      src="https://datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC"
-                      frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-                  <label class="modal-close is-large" for="element-perf"></label>
-                </div>
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Agents Overall Performances</p>&nbsp;<small>Click To
+                  View</small>
               </div>
 
-              <div class="message-body has-background-info">
+              <div class="w3-container">
                 <figure class="image is-16by9">
-                  <img src="./images/Dash1.png" alt="Dashboard" sizes="" srcset="">
+                  <img src="./images/Dash1.png" style="width:100%;cursor:zoom-in"
+                    onclick="document.getElementById('modal01').style.display='block'">
                 </figure>
+
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="900" height="650" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
 
           <div class="column is-half">
-            <article class="message is-info">
-              <div class="message-header center">
-                <p>Call Center Credits</p>&nbsp;
-
-                <!-- Modal trigger -->
-                <label class="button is-dark" for="element-credits">View</label>
-                <input id="element-credits" type="checkbox" />
-
-                <!-- Modal -->
-                <div class="modal" id="credits">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <iframe width="100%" height="700" class="is-fullwidth"
-                      src="https://datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC"
-                      frameborder="0" style="border:0;" allowfullscreen></iframe>
-                    <p class="subtlitle center">Hover on Google Studio ( For Page 2 (Pagination)) For Detailed Report
-                    </p>
-                  </div>
-                  <label class="modal-close is-large" for="element-credits"></label>
-                </div>
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Call Center Credits</p>&nbsp;<small>Click To View</small>
               </div>
 
-              <div class="message-body has-background-info">
+              <div class="w3-container">
                 <figure class="image is-16by9">
-                  <img src="./images/Dash2.png" alt="Dashboard" sizes="" srcset="">
+                  <img src="./images/Dash2.png" style="width:100%;cursor:zoom-in"
+                    onclick="document.getElementById('modal02').style.display='block'">
                 </figure>
+
+                <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="900" height="650" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
@@ -437,59 +427,49 @@
 
         <div class="columns">
           <div class="column is-half">
-            <article class="message is-info">
-              <div class="message-header center">
-                <p>Incomplete Calls</p>&nbsp;
-
-                <!-- Modal trigger -->
-                <label class="button is-dark" for="element-incomplete">View</label>
-                <input id="element-incomplete" type="checkbox" />
-
-                <!-- Modal -->
-                <div class="modal" id="incomplete">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <iframe width="600" height="700" class="is-fullwidth"
-                      src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC"
-                      frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-                  <label class="modal-close is-large" for="element-incomplete"></label>
-                </div>
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Incomplete Calls</p>&nbsp;<small>Click To View</small>
               </div>
 
-              <div class="message-body has-background-info">
+              <div class="w3-container">
                 <figure class="image is-16by9">
-                  <img src="./images/Dash3.png" alt="Dashboard" sizes="" srcset="">
+                  <img src="./images/Dash3.png" style="width:100%;cursor:zoom-in;"
+                    onclick="document.getElementById('modal03').style.display='block'">
                 </figure>
+
+                <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="900" height="600" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/968349c2-602c-4f97-a6b4-01d1c181d151/page/RQUPC"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
 
           <div class="column is-half">
-            <article class="message is-info">
-              <div class="message-header center">
-                <p>Warnings Tracker</p>&nbsp;
-
-                <!-- Modal trigger -->
-                <label class="button is-dark" for="element-warnings">View</label>
-                <input id="element-warnings" type="checkbox" />
-
-                <!-- Modal -->
-                <div class="modal" id="warnings">
-                  <div class="modal-background"></div>
-                  <div class="modal-content">
-                    <iframe width="600" height="700" class="is-fullwidth"
-                      src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
-                      frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-                  <label class="modal-close is-large" for="element-warnings"></label>
-                </div>
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Warnings Tracker </p>&nbsp;<small>Click To View</small>
               </div>
 
-              <div class="message-body has-background-info">
+              <div class="w3-container">
                 <figure class="image is-16by9">
-                  <img src="./images/Dash4.png" alt="Dashboard" sizes="" srcset="">
+                  <img src="./images/Dash4.png" style="width:100%;cursor:zoom-in"
+                    onclick="document.getElementById('modal04').style.display='block'">
                 </figure>
+
+                <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="900" height="600" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
