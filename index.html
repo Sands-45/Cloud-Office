@@ -92,7 +92,7 @@
 
 
       <article class="media notification is-info">
-        <div class="content">
+        <div id="viewp" class="content">
           <h1 class="title is-size-4 center">
             <i class="fas fa-users"></i>&nbsp;Overview
           </h1>
@@ -197,7 +197,7 @@
         <div id="over-section" class="content p-5 has-background-info">
           <div class="columns is-multiline has-background-info-light">
 
-            <div class="column is-one-third">
+            <div class="column is-one-quater">
               <article class="card has-background-info" id="home">
                 <div class="card-content">
                   <p class="subtitle has-text-white center"><b>Scheduling</b></p>
@@ -211,7 +211,7 @@
               </article>
             </div>
 
-            <div class="column is-one-third">
+            <div class="column is-one-quater">
               <article class="card has-background-info" id="home">
                 <div class="card-content">
                   <p class="subtitle has-text-white center"><b>Performances</b></p>
@@ -226,7 +226,7 @@
               </article>
             </div>
 
-            <div class="column is-one-third">
+            <div class="column is-one-quater">
               <article class="card has-background-info" id="home">
                 <div class="card-content">
                   <p class="subtitle has-text-white center"><b>Team</b>
@@ -256,7 +256,23 @@
               </article>
             </div>
 
-            <div class="column is-two-thirds">
+            <div class="column is-one-quater">
+              <article class="card has-background-info" id="home">
+                <div class="card-content">
+                  <p class="subtitle has-text-white center"><b>Projects</b></p>
+                  <p class="has-text-white">
+                    A better way for agents to grow is by letting them know where
+                    they excel and needs to improve?
+                    <br />
+                    <img src="./images/projects.png" style="max-width: 200px" class="center-img" />
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+            <div class="columns">
+            <div class="column has-background-info-light">
               <article class="card has-background-info" id="home1">
                 <div class="card-content">
                   <p class="subtitle has-text-white center"><b>Incentives</b></p>
@@ -278,21 +294,10 @@
                 </div>
               </article>
             </div>
-
-            <div class="column is-one-third">
-              <article class="card has-background-info" id="home1">
-                <div class="card-content">
-                  <p class="subtitle has-text-white center"><b>Projects</b></p>
-                  <p class="has-text-white">
-                    A better way for agents to grow is by letting them know where
-                    they excel and needs to improve?
-                    <br />
-                    <img src="./images/projects.png" style="max-width: 200px" class="center-img" />
-                  </p>
-                </div>
-              </article>
-            </div>
           </div>
+
+            
+          
         </div>
       </div>
     </div>
@@ -309,7 +314,7 @@
             <article class="media">
               <div class="columns">
                 <div class="colunm m-2 is-one-third is-link">
-                  <div class="card has-background-info">
+                  <div id="data" class="card has-background-info">
                     <header class="card-header">
                       <p class="card-header-title center">
                         Why Data Is Important
@@ -330,7 +335,7 @@
                 </div>
 
                 <div class="colunm m-2 is-one-third">
-                  <div class="card has-background-info">
+                  <div id="data" class="card has-background-info">
                     <header class="card-header">
                       <p class="card-header-title center">
                         Data In Decision Making
@@ -350,7 +355,7 @@
                 </div>
 
                 <div class="colunm m-2 is-one-third">
-                  <div class="card has-background-info">
+                  <div id="data" class="card has-background-info">
                     <header class="card-header">
                       <p class="card-header-title center">
                         What Others Say
@@ -378,7 +383,7 @@
           <div class="column is-half">
             <article class=" is-info">
               <div class="subtitle center">
-                <p class="has-text-weight-bold has-text-white">Agents Overall Performances</p>&nbsp;<button
+                <p class="has-text-weight-bold has-text-white">Agents Performances</p>&nbsp;<button
                   class="button is-dark">Click Image To
                   View</button>
               </div>
@@ -964,7 +969,7 @@
 
         </div>
 
-        <div class="columns mt-5">
+        <div id="incentive" class="columns mt-5">
           <div class="column is-half">
             <article class=" is-info">
               <div class="subtitle center">
@@ -976,10 +981,10 @@
               <div class="w3-container">
                 <figure class="image is-2by1">
                   <img src="./images/update.jpg" style="width:100%;cursor:zoom-in"
-                    onclick="document.getElementById('modal0').style.display='block'">
+                    onclick="document.getElementById('modal01').style.display='block'">
                 </figure>
 
-                <div id="modal0" class="w3-modal" onclick="this.style.display='none'">
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
                   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                   <div class="w3-modal-content w3-animate-zoom">
                     <iframe width="900" height="650" class="is-fullwidth"
