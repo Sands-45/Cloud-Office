@@ -79,6 +79,16 @@ html {
   margin: 0 auto;
 }
 /*-----------------------------------------*/
+#data {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#data img {
+  border-radius: 0.2rem;
+  margin: 0 auto;
+}
+/*-----------------------------------------*/
 #incentives-top {
   display: flex;
   flex-direction: column;
@@ -103,6 +113,7 @@ article,
   box-shadow:0 0 2em 0 rgba(0, 0, 0, .25);
   transition:all .3s ease-in-out;
   display: none;
+  scroll-behavior: smooth
 }
 /*---------------------------------------*/
 @media screen and (max-width: 900px) {
@@ -118,6 +129,15 @@ article,
   }
   #over-section img{
     max-width: 150px !important;
+  }
+  #perf .subtitle,#perf .button{
+    font-size:10px;
+  }
+  #home, #home1 p{
+    font-size: 11px;
+  }
+  #incentive .subtitle p, #incentive .button{
+    font-size:10px;
   }
 }
 /*--------------------------*/
