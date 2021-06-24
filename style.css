@@ -142,6 +142,9 @@ article,
   #incentive .subtitle p, #incentive .button{
     font-size:10px;
   }
+  #team img{
+    max-width:50px !important;
+  }
 }
 /*--------------------------*/
 .modal-content{
