@@ -115,6 +115,9 @@ article,
   display: none;
   scroll-behavior: smooth
 }
+#over a, #footer-footer a{
+  color:blue !important;
+}
 /*---------------------------------------*/
 @media screen and (max-width: 900px) {
   #news img {
