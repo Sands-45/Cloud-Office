@@ -197,8 +197,18 @@ article,
   text-decoration: none !important;
 }
 .welcome {
-  background: #bbd4e4a9 !important;
+  background: #add8e6c0 !important;
   color: #000000 !important;
+  border-radius: 0.5rem;
+}
+.sec-color,
+input,
+textarea {
+  background: #add8e6c0 !important;
+}
+input,
+textarea {
+  border: solid 2px #756464 !important;
 }
 /*Wave*/
 .partners-footer {
