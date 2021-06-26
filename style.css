@@ -149,11 +149,6 @@ article,
   border-radius: 0.1rem;
   margin: 0 auto;
 }
-.hero-head,
-.hero-body,
-.hero-foot {
-  background: rgba(0, 0, 0.68, 0.2);
-}
 .body {
   background-image: url("./images/wall.jpg");
   background-size: cover;
@@ -165,7 +160,8 @@ article,
 .about-section {
   background: #1c74aad0;
 }
-.logo-title, .intro {
+.logo-title,
+.intro {
   font-family: monospace !important;
 }
 .about1 {
@@ -220,22 +216,39 @@ article,
   background: #add8e6 !important;
   margin-bottom: -10%;
 }
+.hero-wave {
+  background: #eee;
+  position: relative;
+  background: #add8e6;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-wave > svg {
+  display: block;
+}
+.hero-child {
+  background: #add8e6 !important;
+  margin-top: -10% !important;
+}
+
+/*-----------------------------*/
 #form {
   margin-top: -1% !important;
 }
 form {
   border-radius: 0.5rem;
 }
-.navbar-burger{
-	animation:pulse 2s infinite;
+.navbar-burger {
+  animation: pulse 2s infinite;
 }
-@keyframes pulse{
-	0%{
-		opacity: 0.7;	
-	}
-	100%{
-		opacity: 0.2;
-	}
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 /*------------------------------------*/
 @media screen and (max-width: 900px) {
