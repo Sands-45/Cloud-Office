@@ -165,7 +165,7 @@ article,
 .about-section {
   background: #1c74aad0;
 }
-.logo-title {
+.logo-title, .intro {
   font-family: monospace !important;
 }
 .about1 {
