@@ -56,3 +56,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+//Tools access
+function ValidatePassword() {
+
+  var password = prompt("Please enter password to proceed", "");
+
+  if (password == "assurance@123") {
+    return true;
+  }
+  return false;
+}
