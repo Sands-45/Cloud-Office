@@ -241,7 +241,9 @@ textarea {
   background: #add8e6 !important;
   margin-top: -10% !important;
 }
-
+.w3-modal-content, iframe{
+  border-radius: 0.5rem !important;
+}
 /*-----------------------------*/
 #form {
   margin-top: -1% !important;
