@@ -49,6 +49,22 @@ html {
   margin: 0 auto;
 }
 /*-----------------------------------------*/
+.is-incentive {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.is-incentive img {
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+/*-----------------------------------------*/
+.is-incentive-child {
+  display: flex;
+  flex-direction: column;
+  height: 0 auto;
+}
+/*-----------------------------------------*/
 #home {
   display: flex;
   flex-direction: column;
@@ -224,7 +240,7 @@ textarea {
 }
 .footer {
   background: #add8e6 !important;
-  margin-bottom: -10%;
+  margin-bottom: -15%;
 }
 .hero-wave {
   background: #eee;
@@ -241,7 +257,8 @@ textarea {
   background: #add8e6 !important;
   margin-top: -10% !important;
 }
-.w3-modal-content, iframe{
+.w3-modal-content,
+iframe {
   border-radius: 0.5rem !important;
 }
 /*-----------------------------*/
@@ -261,6 +278,36 @@ form {
   100% {
     opacity: 0.2;
   }
+}
+
+/* Performances */
+.dashboard {
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 0 !important;
+}
+aside li a {
+  color: white !important;
+  border-left: solid 2px black !important;
+  margin: 5px;
+  transition: background-color 1s, margin-left 0.5s;
+}
+aside li a:hover {
+  color: black !important;
+  margin-left: 2px !important;
+}
+aside p {
+  color: rgb(41, 37, 37) !important;
+}
+.dash1,
+.dash1 iframe,
+.container,
+section {
+  border-radius: 0.3rem !important;
+}
+.menu-list .is-active a {
+  background: #01b1ff;
+  color: #000000 !important;
 }
 /*------------------------------------*/
 @media screen and (max-width: 900px) {
