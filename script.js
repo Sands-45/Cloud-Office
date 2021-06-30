@@ -78,12 +78,4 @@ function ValidatePassword() {
   }
   return false;
 }
-//cloud Sign-In
-function ValidatePassword1() {
-  var password1 = prompt("Please enter password to proceed", "");
 
-  if (password1 == "dialndine@123") {
-    return true;
-  }
-  return false;
-}
