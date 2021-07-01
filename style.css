@@ -127,7 +127,7 @@ article,
   bottom: 3em;
   right: 0.1em;
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.25);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: none;
   scroll-behavior: smooth;
 }
@@ -340,4 +340,110 @@ section {
     max-width: 50px !important;
   }
 }
-/*--------------------------*/
+/*------------Dashboards--------------*/
+.is-fullwidth {
+  animation: fadeIn 15s forwards;
+  background: rgba(0, 0, 1, 0.705);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Schedules*/
+ul {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1a89bc;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
