@@ -81,6 +81,10 @@ function openDash(clk, dashName) {
   clk.currentTarget.className += " is-active";
 }
 //Dashboard Reload
+function refreshIframe() {
+  var ifr = document.getElementsByName("dasha")[0];
+  ifr.src = ifr.src;
+}
 function refreshIframe1() {
   var ifr = document.getElementsByName("dasha")[0];
   ifr.src = ifr.src;
@@ -113,3 +117,4 @@ function refreshIframe8() {
   var ifr = document.getElementsByName("dashh")[0];
   ifr.src = ifr.src;
 }
+// Iframe Load Speed
