@@ -69,7 +69,7 @@
             <li class="tab is-active" onclick="openTab(event,'over')">
               <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
             </li>
-            <li class="tab" onclick="openTab(event,'perf')">
+            <li class="tab" onclick="openTab(event,'perf');refreshIframe();">
               <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
             </li>
             <li class="tab" onclick="openTab(event,'proj')">
@@ -89,7 +89,7 @@
       </nav>
     </div>
   </section>
-
+  <!---------End of Hero Section-------->
   <div class="container section">
     <div id="over" class="content-tab">
 
@@ -314,7 +314,8 @@
               <i class="fas fa-headset"></i>&nbsp;Agents
             </p>
             <ul class="menu-list">
-              <li class="board is-active" onclick="openDash(event,'dasha');refreshIframe1();"><a>Agents Overall Performance</a></li>
+              <li class="board is-active" onclick="openDash(event,'dasha');refreshIframe1();"><a>Agents Overall
+                  Performance</a></li>
               <li class="board" onclick="openDash(event, 'dashb');refreshIframe2();"><a>Agents Compliments</a></li>
             </ul>
             <p class="menu-label is-size-6 has-text-weight-bold">
@@ -323,7 +324,8 @@
             <ul class="menu-list">
               <li class="board" onclick="openDash(event, 'dashc');refreshIframe3();"><a>Call Center Credits</a></li>
               <li class="board" onclick="openDash(event, 'dashd');refreshIframe4();"><a>Restaurants Performance</a></li>
-              <li class="board" onclick="openDash(event, 'dashe');refreshIframe5();"><a>Queries & Incomplete Calls</a></li>
+              <li class="board" onclick="openDash(event, 'dashe');refreshIframe5();"><a>Queries & Incomplete Calls</a>
+              </li>
               <li class="board" onclick="openDash(event, 'dashf');refreshIframe6();"><a>Add a member</a></li>
             </ul>
             <p class="menu-label is-size-6 has-text-weight-bold">
@@ -331,7 +333,8 @@
             </p>
             <ul class="menu-list">
               <li class="board" onclick="openDash(event, 'dashg');refreshIframe7();"><a>Warning Tracker</a></li>
-              <li class="board" onclick="openDash(event, 'dashh');refreshIframe8();"><a>Adherence To Work Schedules</a></li>
+              <li class="board" onclick="openDash(event, 'dashh');refreshIframe8();"><a>Adherence To Work Schedules</a>
+              </li>
             </ul>
           </aside>
         </div>
@@ -389,10 +392,10 @@
             <div class="hero-body">
               <div class="container">
                 <h1 class="title is-size-3 has-text-white">
-                  These are Compliments
+                  These are Compliments&nbsp;<i class="fas fa-award has-text-info-dark"></i>
                 </h1>
                 <h2 class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day!
+                  "Always have an attitude of gratitude."- James R. Nowlin 🤞
                 </h2>
               </div>
             </div>
@@ -426,7 +429,7 @@
             </nav>
           </section>
           <div style="width: 100%; " class="mt-1">
-            <iframe width="100%" name="dashb"  height="500px" class="is-fullwidth"
+            <iframe width="100%" name="dashb" height="500px" class="is-fullwidth"
               src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
               frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
@@ -440,7 +443,7 @@
                   Call Center Credits
                 </h1>
                 <h2 class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day!
+                  "Your most unhappy customers are your greatest source of learning." - Bill Gates📚
                 </h2>
               </div>
             </div>
@@ -474,7 +477,7 @@
             </nav>
           </section>
           <div style="width: 100%; " class="mt-1">
-            <iframe width="100%"  name="dashc" height="500px" class="is-fullwidth"
+            <iframe width="100%" name="dashc" height="500px" class="is-fullwidth"
               src="https://datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC"
               frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
@@ -488,7 +491,7 @@
                   Restaurants Performance
                 </h1>
                 <h2 class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day!
+                  "Unless you love everybody, you can’t sell anybody." – Dicky Fox 🛍
                 </h2>
               </div>
             </div>
@@ -522,7 +525,7 @@
             </nav>
           </section>
           <div style="width: 100%; " class="mt-1">
-            <iframe width="100%" name="dashd"  height="500px" class="is-fullwidth"
+            <iframe width="100%" name="dashd" height="500px" class="is-fullwidth"
               src="https://datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC"
               frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
@@ -536,7 +539,7 @@
                   Queries & Incomplete Calls
                 </h1>
                 <h2 class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day!
+                  "Customer service is about empathy." - Chaz Van de Motter😊
                 </h2>
               </div>
             </div>
@@ -570,7 +573,7 @@
             </nav>
           </section>
           <div style="width: 100%; " class="mt-1">
-            <iframe width="100%" name="dashe"  height="500px" class="is-fullwidth"
+            <iframe width="100%" name="dashe" height="500px" class="is-fullwidth"
               src="https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC"
               frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
@@ -581,7 +584,7 @@
             <div class="hero-body">
               <div class="container">
                 <h1 class="title is-size-3 has-text-white">
-                  These are Compliments
+                  Upcoming Changes
                 </h1>
                 <h2 class="subtitle is-size-6 has-text-white">
                   I hope you are having a great day!
@@ -609,743 +612,745 @@
                   <p class="title has-text-white">68</p>
                 </div>
               </div>
-        </nav>
-        </section>
-        <div style="width: 100%; " class="mt-1">
-          <iframe width="100%"  name="dashf"  height="500px" class="is-fullwidth"
-            src="https://datastudio.google.com/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4" frameborder="0"
-            style="border:0" allowfullscreen style="width:100%"></iframe>
-        </div>
-      </div>
-      <!-------------------------Dashboard   G---------------------------- -->
-      <div id="dashg" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-        <section class="hero has-background-black-ter dash-top is-small">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title is-size-3 has-text-white">
-                Warning Tracker
-              </h1>
-              <h2 class="subtitle is-size-6 has-text-white">
-                I hope you are having a great day!
-              </h2>
-            </div>
-          </div>
-        </section>
-        <section class="has-background-black-ter has-text-white mt-1 p-3">
-          <nav class="level is-mobile">
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Reports</p>
-                <p class="title has-text-white">8</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Data Source</p>
-                <p class="title has-text-white">10</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Agents</p>
-                <p class="title has-text-white">68</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Restaurants</p>
-                <p class="title has-text-white">291</p>
-              </div>
-            </div>
-          </nav>
-        </section>
-        <div style="width: 100%; " class="mt-1">
-          <iframe width="100%" name="dashg"  height="500px" class="is-fullwidth"
-            src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
-            frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-        </div>
-      </div>
-      <!-------------------------Dashboard   H---------------------------- -->
-      <div id="dashh" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-        <section class="hero has-background-black-ter dash-top is-small">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title is-size-3 has-text-white">
-                Adherence To Work Schedules
-              </h1>
-              <h2 class="subtitle is-size-6 has-text-white">
-                I hope you are having a great day!
-              </h2>
-            </div>
-          </div>
-        </section>
-        <section class="has-background-black-ter has-text-white mt-1 p-3">
-          <nav class="level is-mobile">
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Reports</p>
-                <p class="title has-text-white">8</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Data Source</p>
-                <p class="title has-text-white">10</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Agents</p>
-                <p class="title has-text-white">68</p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Restaurants</p>
-                <p class="title has-text-white">291</p>
-              </div>
-            </div>
-          </nav>
-        </section>
-        <div style="width: 100%; " class="mt-1">
-          <iframe width="100%" name="dashh"  height="500px" class="is-fullwidth"
-            src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gG"
-            frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-        </div>
-      </div>
-      </div>
-
-    <article class="media mt-5 is-fluid">
-      <div class="columns is-fluid  has-background-info-dark">
-        <div class="colunm m-2 is-one-third is-link">
-          <div id="data" class="card has-background-info-dark">
-            <header class="card-header">
-              <p class="card-header-title center">
-                Why Data Is Important
-              </p>
-            </header>
-            <div class="card-content has-text-white">
-              <div class="content">
-                Today, gathering data to help you better understand your customers and business is relatively
-                easy. It’s become so easy that there’s the danger of having too much data to analyze. But to
-                take full advantage of data and analytics, you need to know how to get the most value from your
-                data.<br>
-                <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
-              </div>
-            </div>
+            </nav>
+          </section>
+          <div style="width: 100%; " class="mt-1">
+            <iframe width="100%" name="dashf" height="500px" class="is-fullwidth"
+              src="https://datastudio.google.com/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4" frameborder="0"
+              style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
         </div>
-
-        <div class="colunm m-2 is-one-third">
-          <div id="data" class="card has-background-info-dark">
-            <header class="card-header">
-              <p class="card-header-title center">
-                Data In Decision Making
-              </p>
-            </header>
-            <div class="card-content">
-              <div class="content has-text-white">
-                While the average small business has less self-generated data than big players. . .this doesn’t
-                mean big data is off-limits to them. It is more suitable for small businesses to collect big
-                data because they’re generally more agile, enabling them to act more quickly on data-driven
-                insights.<br>
-                <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
+        <!-------------------------Dashboard   G---------------------------- -->
+        <div id="dashg" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
+          <section class="hero has-background-black-ter dash-top is-small">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title is-size-3 has-text-white">
+                  Warning Tracker
+                </h1>
+                <h2 class="subtitle is-size-6 has-text-white">
+                  Discipline is the key to success.
+                </h2>
               </div>
             </div>
+          </section>
+          <section class="has-background-black-ter has-text-white mt-1 p-3">
+            <nav class="level is-mobile">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Reports</p>
+                  <p class="title has-text-white">8</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Data Source</p>
+                  <p class="title has-text-white">10</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Agents</p>
+                  <p class="title has-text-white">68</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Restaurants</p>
+                  <p class="title has-text-white">291</p>
+                </div>
+              </div>
+            </nav>
+          </section>
+          <div style="width: 100%; " class="mt-1">
+            <iframe width="100%" name="dashg" height="500px" class="is-fullwidth"
+              src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
+              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
         </div>
-
-        <div class="colunm m-2 is-one-third">
-          <div id="data" class="card has-background-info-dark">
-            <header class="card-header">
-              <p class="card-header-title center">
-                What Others Say
-              </p>
-            </header>
-            <div class="card-content has-text-white">
-              <div class="content">
-                A Forbes article discussing a survey from Deloitte, notes that “49 percent of respondents said
-                analytics helps them make better decisions, 16 percent say that it better enables key strategic
-                initiatives, and 10 percent say it helps them improve relationships with both customers and
-                business partners.<br>
-                <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
+        <!-------------------------Dashboard   H---------------------------- -->
+        <div id="dashh" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
+          <section class="hero has-background-black-ter dash-top is-small">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title is-size-3 has-text-white">
+                  Adherence To Work Schedules
+                </h1>
+                <h2 class="subtitle is-size-6 has-text-white">
+                  Without discipline there's no life at all.
+                </h2>
               </div>
             </div>
+          </section>
+          <section class="has-background-black-ter has-text-white mt-1 p-3">
+            <nav class="level is-mobile">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Reports</p>
+                  <p class="title has-text-white">8</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Data Source</p>
+                  <p class="title has-text-white">10</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Agents</p>
+                  <p class="title has-text-white">68</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Restaurants</p>
+                  <p class="title has-text-white">291</p>
+                </div>
+              </div>
+            </nav>
+          </section>
+          <div style="width: 100%; " class="mt-1">
+            <iframe width="100%" name="dashh" height="500px" class="is-fullwidth"
+              src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gG"
+              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
         </div>
       </div>
-    </article>
-  
-  </div>
-  <!-----------End of performances-------------->
 
-  <div id="proj" class="content-tab is-fluid" style="display: none">
+      <article class="media mt-5 is-fluid">
+        <div class="columns is-fluid  has-background-info-dark">
+          <div class="colunm m-2 is-one-third is-link">
+            <div id="data" class="card has-background-info-dark">
+              <header class="card-header">
+                <p class="card-header-title center">
+                  Why Data Is Important
+                </p>
+              </header>
+              <div class="card-content has-text-white">
+                <div class="content">
+                  Today, gathering data to help you better understand your customers and business is relatively
+                  easy. It’s become so easy that there’s the danger of having too much data to analyze. But to
+                  take full advantage of data and analytics, you need to know how to get the most value from your
+                  data.<br>
+                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <section class="section has-background-info">
-      <article class="media notification has-text-info has-background-info-light">
-        <div class="content">
-          <h1 class="title is-size-4 center">
-            <i class="fas fa-project-diagram"></i>&nbsp;Projects
-          </h1>
-          <p class="is-size-6 center">
-            This is the most important step in any incentive program. Successful call center incentive programs focus
-            on
-            things that improve company performance — and steer clear of things that undermine it. Focusing on time
-            spent per call, for example, encourages employees to complete calls quickly rather than ensuring that the
-            caller’s needs have been met. Focusing on first-call resolution discourages agents from asking for help
-            when
-            they need it. The key to getting it right is to first decide what you want employees to do and, only then,
-            think about how to motivate them to do it.
-          </p>
+          <div class="colunm m-2 is-one-third">
+            <div id="data" class="card has-background-info-dark">
+              <header class="card-header">
+                <p class="card-header-title center">
+                  Data In Decision Making
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content has-text-white">
+                  While the average small business has less self-generated data than big players. . .this doesn’t
+                  mean big data is off-limits to them. It is more suitable for small businesses to collect big
+                  data because they’re generally more agile, enabling them to act more quickly on data-driven
+                  insights.<br>
+                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="colunm m-2 is-one-third">
+            <div id="data" class="card has-background-info-dark">
+              <header class="card-header">
+                <p class="card-header-title center">
+                  What Others Say
+                </p>
+              </header>
+              <div class="card-content has-text-white">
+                <div class="content">
+                  A Forbes article discussing a survey from Deloitte, notes that “49 percent of respondents said
+                  analytics helps them make better decisions, 16 percent say that it better enables key strategic
+                  initiatives, and 10 percent say it helps them improve relationships with both customers and
+                  business partners.<br>
+                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
+                  <br>
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
-      <div class="columns">
+    </div>
+    <!-----------End of performances-------------->
 
-        <div class="column has-background-info">
+    <div id="proj" class="content-tab is-fluid" style="display: none">
 
-          <div class="columns">
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        src="https://www.glassdoor.com/employers/app/uploads/sites/2/2021/02/GoogleDrive_640X469_5-Best-Practices-for-Writing-Great-Job-Descriptions-02-1280x992.png"
-                        alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
-                          ago|
-                          Jan 2021</small>
-                        <br>
-                        Introduce and Get Agents To Sign Job Description<br>
-                        Introduce New Policies & Update Agents.<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-success">Completed</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
+      <section class="section has-background-info">
+        <article class="media notification has-text-info has-background-info-light">
+          <div class="content">
+            <h1 class="title is-size-4 center">
+              <i class="fas fa-project-diagram"></i>&nbsp;Projects
+            </h1>
+            <p class="is-size-6 center">
+              This is the most important step in any incentive program. Successful call center incentive programs focus
+              on
+              things that improve company performance — and steer clear of things that undermine it. Focusing on time
+              spent per call, for example, encourages employees to complete calls quickly rather than ensuring that the
+              caller’s needs have been met. Focusing on first-call resolution discourages agents from asking for help
+              when
+              they need it. The key to getting it right is to first decide what you want employees to do and, only then,
+              think about how to motivate them to do it.
+            </p>
+          </div>
+        </article>
+
+        <div class="columns">
+
+          <div class="column has-background-info">
+
+            <div class="columns">
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img
+                          src="https://www.glassdoor.com/employers/app/uploads/sites/2/2021/02/GoogleDrive_640X469_5-Best-Practices-for-Writing-Great-Job-Descriptions-02-1280x992.png"
+                          alt="Image">
+                      </figure>
                     </div>
-                </article>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
+                            ago|
+                            Jan 2021</small>
+                          <br>
+                          Introduce and Get Agents To Sign Job Description<br>
+                          Introduce New Policies & Update Agents.<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-success">Completed</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img
+                          src="https://www.jotform.com/blog/wp-content/uploads/2019/11/The-Ultimate-Performance-Appraisal-Guide-featured.png"
+                          alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">3months
+                            ago|
+                            Feb & Mar 2021</small>
+                          <br>
+                          Communicate Call Center Metrics With The Agents.<br>
+                          Introduce Performance Appraisals.<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-success">Completed</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="columns">
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://www.commbox.io/wp-content/uploads/2019/10/11-1-1024x600.jpg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Second Quater</strong> <small>@sandsqa</small> <small class="has-text-link">1 months
+                            ago| May & June</small>
+                          <br>
+                          Complimentry Incentives To Reduce Wrong Orders<br>
+                          Management Customer Service Training<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-primary">In Progress</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img
+                          src="https://website-assets-fd.freshworks.com/attachments/ckjv6jx7700lscjfzuyspsnv0-customer-service-team-training.one-half.png"
+                          alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Second Quater</strong> <small>@quality_team</small> <small class="has-text-link">1
+                            months ago| Jun</small>
+                          <br>
+                          Wrong Order Reduction Plan.<br>
+                          Staff Customer Service Training.<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-primary">In Progress</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
               </div>
             </div>
 
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        src="https://www.jotform.com/blog/wp-content/uploads/2019/11/The-Ultimate-Performance-Appraisal-Guide-featured.png"
-                        alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">3months
-                          ago|
-                          Feb & Mar 2021</small>
-                        <br>
-                        Communicate Call Center Metrics With The Agents.<br>
-                        Introduce Performance Appraisals.<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-success">Completed</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
+            <div class="columns">
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://www.commbox.io/wp-content/uploads/2019/10/12-1024x600.jpg" alt="Image">
+                      </figure>
                     </div>
-                </article>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Third Quater</strong> <small>@samkele, @mbona</small> <small
+                            class="has-text-link">1months ago| Jul</small>
+                          <br>
+                          Track Compliance To Increase 1st Call Resolution<br>
+                          Product Knowlege Training (Full House)<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-danger">Not yet Started</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="box equal-height">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://www.dumblittleman.com/wp-content/uploads/2014/04/1-41-696x435.jpg"
+                          alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Fourth Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
+                            ago</small>
+                          <br>
+                          Minimize Query Rate By Ensuring Effective Communication For Both Store And The Call Center<br>
+                        <div class="field is-grouped is-grouped-multiline">
+                          <div class="control">
+                            <div class="tags has-addons">
+                              <a class="tag is-danger">Not Yet Started</a>
+                              <a class="tag is-delete"></a>
+                            </div>
+                          </div>
+                          </p>
+                        </div>
+                        <nav class="level is-mobile">
+                          <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                              <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                  </article>
+                </div>
               </div>
             </div>
 
           </div>
-
-          <div class="columns">
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img src="https://www.commbox.io/wp-content/uploads/2019/10/11-1-1024x600.jpg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Second Quater</strong> <small>@sandsqa</small> <small class="has-text-link">1 months
-                          ago| May & June</small>
-                        <br>
-                        Complimentry Incentives To Reduce Wrong Orders<br>
-                        Management Customer Service Training<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-primary">In Progress</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
-                    </div>
-                </article>
-              </div>
-            </div>
-
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        src="https://website-assets-fd.freshworks.com/attachments/ckjv6jx7700lscjfzuyspsnv0-customer-service-team-training.one-half.png"
-                        alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Second Quater</strong> <small>@quality_team</small> <small class="has-text-link">1
-                          months ago| Jun</small>
-                        <br>
-                        Wrong Order Reduction Plan.<br>
-                        Staff Customer Service Training.<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-primary">In Progress</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
-                    </div>
-                </article>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img src="https://www.commbox.io/wp-content/uploads/2019/10/12-1024x600.jpg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Third Quater</strong> <small>@samkele, @mbona</small> <small
-                          class="has-text-link">1months ago| Jul</small>
-                        <br>
-                        Track Compliance To Increase 1st Call Resolution<br>
-                        Product Knowlege Training (Full House)<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-danger">Not yet Started</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
-                    </div>
-                </article>
-              </div>
-            </div>
-
-            <div class="column is-half">
-              <div class="box equal-height">
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img src="https://www.dumblittleman.com/wp-content/uploads/2014/04/1-41-696x435.jpg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Fourth Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
-                          ago</small>
-                        <br>
-                        Minimize Query Rate By Ensuring Effective Communication For Both Store And The Call Center<br>
-                      <div class="field is-grouped is-grouped-multiline">
-                        <div class="control">
-                          <div class="tags has-addons">
-                            <a class="tag is-danger">Not Yet Started</a>
-                            <a class="tag is-delete"></a>
-                          </div>
-                        </div>
-                        </p>
-                      </div>
-                      <nav class="level is-mobile">
-                        <div class="level-left">
-                          <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                              <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                              <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                          <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                              <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                          </a>
-                        </div>
-                      </nav>
-                    </div>
-                </article>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!--------------End of projects----------------->
+    <!--------------End of projects----------------->
 
-  <div id="incent" class="content-tab center" style="display: none">
-    <div class="container has-background-info">
+    <div id="incent" class="content-tab center" style="display: none">
+      <div class="container has-background-info">
 
-      <div class="column">
-        <div class="content has-background-info-light">
-          <p class="is-size-4 has-text-weight-bold pt-5"><i class="fas fa-award"></i>Incentives</p>
-          <p class="is-size-6 p-5">
-            Call centre agents are a special breed of human, they are expected to adapt to new <b>IT</b> and
-            <u><b>CRM</b></u> systems at
-            the drop of a hat, and progression opportunities are few and far between due to flat structures.As such,
-            it only makes sense that incentive ideas for call centre staff should be tailor-made for the environment
-            in which they work. Playing our trade in a call centre can be a tough gig; having a job that hinges on
-            this type of people-centric work has been proven to require very focussed emotional management, and can
-            often lead to stress and burnout if conditions aren't ideal.Fortunately, there are simple ways to boost
-            morale among the folks that serve as the voice of our company on a daily basis.<br><br>
-            <button class="button center is-info ">⇩ See Active ⇩</butoon>
-          </p>
-        </div>
-      </div>
-
-      <div class="columns m-3 has-background-info-light">
-
-        <div class="column is-half">
-          <div class="card is-incentive">
-            <div class="card-image">
-              <figure class="image is-2by1">
-                <img src="./images/update.jpg" alt="Coded Mails">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-4">Upsell/Cross-Sell Incentives</p>
-              <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
-
-              <div class="notification is-info is-incentive-child">
-                Upselling is a sales technique where the customer is offered a higher priced option or add-on to the
-                product they are purchasing.While is offering a complementary product or service that the original
-                product does not cover. <strong>This is essential for our businesses, but how
-                  exactly?</strong>...1.Increases Profits, 2.Increases Customers Loyalty, 3. Increase in ROI and the
-                list goes on .<a
-                  href="https://mapmycustomers.me/blog/the-importance-of-upselling-and-cross-selling-in-sales/">For
-                  more read this article</a>.
-              </div>
-
-            </div>
-            <footer class="card-footer">
-              <a href="https://dialndine.slack.com/archives/C01J9DLFQJH" target="_blank" class="card-footer-item">See
-                Full Details Here&nbsp;<i class="fab fa-slack"></i></a>
-            </footer>
+        <div class="column">
+          <div class="content has-background-info-light">
+            <p class="is-size-4 has-text-weight-bold pt-5"><i class="fas fa-award"></i>Incentives</p>
+            <p class="is-size-6 p-5">
+              Call centre agents are a special breed of human, they are expected to adapt to new <b>IT</b> and
+              <u><b>CRM</b></u> systems at
+              the drop of a hat, and progression opportunities are few and far between due to flat structures.As such,
+              it only makes sense that incentive ideas for call centre staff should be tailor-made for the environment
+              in which they work. Playing our trade in a call centre can be a tough gig; having a job that hinges on
+              this type of people-centric work has been proven to require very focussed emotional management, and can
+              often lead to stress and burnout if conditions aren't ideal.Fortunately, there are simple ways to boost
+              morale among the folks that serve as the voice of our company on a daily basis.<br><br>
+              <button class="button center is-info ">⇩ See Active ⇩</butoon>
+            </p>
           </div>
         </div>
 
-        <div class="column is-half">
-          <div class="card is-incentive">
-            <div class="card-image">
-              <figure class="image  is-2by1">
-                <img src="./images/Dash5.png" alt="Coded Mails">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-4">Complimentary Incentive</p>
-              <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
+        <div class="columns m-3 has-background-info-light">
 
-              <div class="notification is-info is-incentive-child">
-                Receiving these compliments from customers is a boon for business and a company's reputation.
-                Compliments in general make a person feel good. Receiving compliments from customers means that you
-                have done something special and they in turn feed those positive feelings back to you.
-                <strong><i>“When I compliment you, I compliment myself, because I am who I associate with.” – Jarod
-                    Kintz.</i></strong><a
-                  href="https://www.silvicarosca.com/post/2017/05/29/the-power-of-compliments-in-business"> See the
-                  benefits Here</a>.
+          <div class="column is-half">
+            <div class="card is-incentive">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="./images/update.jpg" alt="slack">
+                </figure>
               </div>
+              <div class="card-content">
+                <p class="title is-4">Upsell/Cross-Sell Incentives</p>
+                <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
 
+                <div class="notification is-info is-incentive-child">
+                  Upselling is a sales technique where the customer is offered a higher priced option or add-on to the
+                  product they are purchasing.While is offering a complementary product or service that the original
+                  product does not cover. <strong>This is essential for our businesses, but how
+                    exactly?</strong>...1.Increases Profits, 2.Increases Customers Loyalty, 3. Increase in ROI and the
+                  list goes on .<a
+                    href="https://mapmycustomers.me/blog/the-importance-of-upselling-and-cross-selling-in-sales/">For
+                    more read this article</a>.
+                </div>
+
+              </div>
               <footer class="card-footer">
                 <a href="https://dialndine.slack.com/archives/C01J9DLFQJH" target="_blank" class="card-footer-item">See
                   Full Details Here&nbsp;<i class="fab fa-slack"></i></a>
               </footer>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="incentive" class="columns mt-5">
-        <div class="column is-half">
-          <article class=" is-info">
-            <div class="subtitle center">
-              <p class="has-text-weight-bold has-text-white">Upsell Updates On Slack</p>&nbsp;<button
-                class="button is-dark"><a href="https://dialndine.slack.com/archives/C01J9DLFQJH"><i
-                    class="fab fa-slack"></i></a></button>
-            </div>
+          <div class="column is-half">
+            <div class="card is-incentive">
+              <div class="card-image">
+                <figure class="image  is-2by1">
+                  <img src="./images/Dash5.png" alt="Coded Mails">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Complimentary Incentive</p>
+                <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
 
-            <div class="w3-container">
-              <figure class="image is-2by1">
-                <img src="./images/update.jpg" style="width:100%;cursor:zoom-in"
-                  onclick="document.getElementById('modal01').style.display='block'">
-              </figure>
-
-              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <iframe width="100%" height="650" class="is-fullwidth"
-                    src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
-                    frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                <div class="notification is-info is-incentive-child">
+                  Receiving these compliments from customers is a boon for business and a company's reputation.
+                  Compliments in general make a person feel good. Receiving compliments from customers means that you
+                  have done something special and they in turn feed those positive feelings back to you.
+                  <strong><i>“When I compliment you, I compliment myself, because I am who I associate with.” – Jarod
+                      Kintz.</i></strong><a
+                    href="https://www.silvicarosca.com/post/2017/05/29/the-power-of-compliments-in-business"> See the
+                    benefits Here</a>.
                 </div>
+
+                <footer class="card-footer">
+                  <a href="https://dialndine.slack.com/archives/C01J9DLFQJH" target="_blank"
+                    class="card-footer-item">See
+                    Full Details Here&nbsp;<i class="fab fa-slack"></i></a>
+                </footer>
               </div>
             </div>
-          </article>
+          </div>
         </div>
 
-        <div class="column is-half">
-          <article class=" is-info">
-            <div class="subtitle center">
-              <p class="has-text-weight-bold has-text-white">Compliments Report</p>&nbsp;<button
-                class="button is-dark">Click Image To
-                View</button>
-            </div>
+        <div id="incentive" class="columns mt-5">
+          <div class="column is-half">
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Upsell Updates On Slack</p>&nbsp;<button
+                  class="button is-dark"><a href="https://dialndine.slack.com/archives/C01J9DLFQJH"><i
+                      class="fab fa-slack"></i></a></button>
+              </div>
 
-            <div class="w3-container">
-              <figure class="image is-2by1">
-                <img src="./images/Dash5.png" style="width:100%;cursor:zoom-in"
-                  onclick="document.getElementById('modal05').style.display='block'">
-              </figure>
+              <div class="w3-container">
+                <figure class="image is-2by1">
+                  <img src="./images/update.jpg" style="width:100%;cursor:zoom-in"
+                    onclick="document.getElementById('modal01').style.display='block'">
+                </figure>
 
-              <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button has-background-info w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <iframe width="100%" height="650" class="is-fullwidth"
-                    src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
-                    frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="100%" height="650" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
+            </article>
+          </div>
 
-  </div>
-  <!------------------------End of Incentive------------------------->
+          <div class="column is-half">
+            <article class=" is-info">
+              <div class="subtitle center">
+                <p class="has-text-weight-bold has-text-white">Compliments Report</p>&nbsp;<button
+                  class="button is-dark">Click Image To
+                  View</button>
+              </div>
 
-  <div id="sched" class="content-tab" style="display: none">
-    <p>
-      test2<br />
-      Details Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley
-      of type and scrambled it to make a type specimen book. It has survived
-      not only five centuries, but also the leap into electronic
-      typesetting, remaining essentially unchanged. It was popularised in
-      the 1960s with the release of Letraset sheets containing Lorem Ipsum
-      passages, and more recently with desktop publishing software like
-      Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </div>
-  <!-----------------------End of Schedules--------------------------->
-  <div id="news" class="content-tab has-background-info-light" style="display: none">
-    <div class="message-header has-background-info">
-      <h2 class="title center has-text-white pb-2"><i class="far fa-newspaper"></i>&nbsp;Newsletter</h2>
-    </div>
+              <div class="w3-container">
+                <figure class="image is-2by1">
+                  <img src="./images/Dash5.png" style="width:100%;cursor:zoom-in"
+                    onclick="document.getElementById('modal05').style.display='block'">
+                </figure>
 
-    <img class="center pt-5" src="./images/news-head.jpg" alt="News" style="max-width: 700px;height: auto;">
-    <div class="notification">
-      <h1 class="subtitle center is-size-3">Here is your weekly digest</h1>
-      <p class="center">
-        You’ve put lots of thought into your employee newsletter.You hit ‘send’ to all-staff……and patiently wait to
-        hear what your colleagues think.But, at the end of the day, all you hear are crickets.<br>
-        Did they like the content?<br>
-        Did they even read your newsletter (or did it go straight to trash)? 😬<br>
-        It’s hard to captivate your employees when there are so many different channels competing for their
-        attention.On top of that, employees might be spread out in different offices or working remotely, and you
-        really need them to read your newsletter to get on the same page.So how do you make sure they read it?To
-        transform your employees from apathetic newsletter deleters to engaged readers, consider what kind of
-        content they really want.Your newsletter can’t all be corporate announcements. Like any great piece of
-        content, there has to be variety
-        to capture—and keep—your readers’ attention.The most engaging internal newsletters feature a mix of
-        employee-focused content, organization-focused
-        content, and customer-focused content.Want to strike that balance? Well, continue reading.
-      </p><br>
-      <button class="button is-large is-info center">READ MORE</button>
-      <hr>
-      <div class="columns">
-
-        <div id="news" class="column is-half">
-          <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
-          <h1 class="subtitle center  is-size-3">Importance of Brainstorming</h1>
-          <p>Brainstorming is a way to provide call centers the means to generate new ideas and even tackle complex
-            problems. Depending on what the situation warrants, brainstorming sessions can be conducted in small
-            groups, large groups or individually. In addition, call centers can choose one of several brainstorming
-            techniques to reach their goals.</p>
-        </div>
-
-        <div id="news" class="column is-half">
-          <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
-          <h1 class="subtitle center is-size-3">Is Teamwork That Crucial ?</h1>
-          <p>Championship teams have something in common across all sports: they work together as a machine. In her
-            recent article, Lynn Hunsaker says that companies need to pull together and collaborate like sports teams
-            across all departments in order to increase customer loyalty, revenue, and other valuable components of
-            success. One specific area where collaboration across all levels of the company is important is the
-            customer experience. Without collaboration, the customer experience will fail.</p>
+                <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button has-background-info w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <iframe width="100%" height="650" class="is-fullwidth"
+                      src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
+                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
 
-      <img class="center pt-5" src="./images/menu-update.png" alt="News" style="max-width: 500px;height: auto;">
+    </div>
+    <!------------------------End of Incentive------------------------->
+
+    <div id="sched" class="content-tab" style="display: none">
+      <p>
+        test2<br />
+        Details Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in
+        the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <!-----------------------End of Schedules--------------------------->
+    <div id="news" class="content-tab has-background-info-light" style="display: none">
+      <div class="message-header has-background-info">
+        <h2 class="title center has-text-white pb-2"><i class="far fa-newspaper"></i>&nbsp;Newsletter</h2>
+      </div>
+
+      <img class="center pt-5" src="./images/news-head.jpg" alt="News" style="max-width: 700px;height: auto;">
       <div class="notification">
-        <h1 class="subtitle center is-size-3">Updates</h1>
+        <h1 class="subtitle center is-size-3">Here is your weekly digest</h1>
         <p class="center">
-          By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you
-          might as well call us amabhoza of this delivery game. Whether you call in or order online, you can get an
-          oh-so-rhalising pizza delivered to your door! And when your nearest Debonairs Pizza is within a 3km driving
-          distance, you get your fave pizza delivered for free!<br>
-          But there’s more than one way to get a box of your fave pizza onto your table. We have 3 ways for you to
-          order from Debonairs Pizza. Choose the one that works best for you.
+          You’ve put lots of thought into your employee newsletter.You hit ‘send’ to all-staff……and patiently wait to
+          hear what your colleagues think.But, at the end of the day, all you hear are crickets.<br>
+          Did they like the content?<br>
+          Did they even read your newsletter (or did it go straight to trash)? 😬<br>
+          It’s hard to captivate your employees when there are so many different channels competing for their
+          attention.On top of that, employees might be spread out in different offices or working remotely, and you
+          really need them to read your newsletter to get on the same page.So how do you make sure they read it?To
+          transform your employees from apathetic newsletter deleters to engaged readers, consider what kind of
+          content they really want.Your newsletter can’t all be corporate announcements. Like any great piece of
+          content, there has to be variety
+          to capture—and keep—your readers’ attention.The most engaging internal newsletters feature a mix of
+          employee-focused content, organization-focused
+          content, and customer-focused content.Want to strike that balance? Well, continue reading.
         </p><br>
-        <button class="button is-large is-info center">Browse Menus</button>
-        <p class="center">For intsant Updates Check-out our Slack Channel Here: <button class="button is-small"><a
-              target="_blank" href="https://dialndine.slack.com/archives/C01AYQP75BM"><i
-                class="fab fa-slack"></a></i></button></p>
+        <button class="button is-large is-info center">READ MORE</button>
+        <hr>
+        <div class="columns">
+
+          <div id="news" class="column is-half">
+            <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
+            <h1 class="subtitle center  is-size-3">Importance of Brainstorming</h1>
+            <p>Brainstorming is a way to provide call centers the means to generate new ideas and even tackle complex
+              problems. Depending on what the situation warrants, brainstorming sessions can be conducted in small
+              groups, large groups or individually. In addition, call centers can choose one of several brainstorming
+              techniques to reach their goals.</p>
+          </div>
+
+          <div id="news" class="column is-half">
+            <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
+            <h1 class="subtitle center is-size-3">Is Teamwork That Crucial ?</h1>
+            <p>Championship teams have something in common across all sports: they work together as a machine. In her
+              recent article, Lynn Hunsaker says that companies need to pull together and collaborate like sports teams
+              across all departments in order to increase customer loyalty, revenue, and other valuable components of
+              success. One specific area where collaboration across all levels of the company is important is the
+              customer experience. Without collaboration, the customer experience will fail.</p>
+          </div>
+        </div>
+
+        <img class="center pt-5" src="./images/menu-update.png" alt="News" style="max-width: 500px;height: auto;">
+        <div class="notification">
+          <h1 class="subtitle center is-size-3">Updates</h1>
+          <p class="center">
+            By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you
+            might as well call us amabhoza of this delivery game. Whether you call in or order online, you can get an
+            oh-so-rhalising pizza delivered to your door! And when your nearest Debonairs Pizza is within a 3km driving
+            distance, you get your fave pizza delivered for free!<br>
+            But there’s more than one way to get a box of your fave pizza onto your table. We have 3 ways for you to
+            order from Debonairs Pizza. Choose the one that works best for you.
+          </p><br>
+          <button class="button is-large is-info center">Browse Menus</button>
+          <p class="center">For intsant Updates Check-out our Slack Channel Here: <button class="button is-small"><a
+                target="_blank" href="https://dialndine.slack.com/archives/C01AYQP75BM"><i
+                  class="fab fa-slack"></a></i></button></p>
+        </div>
+
+
       </div>
-
-
     </div>
-  </div>
   </div>
 
   <!--------------------------------------------Footer          -->
