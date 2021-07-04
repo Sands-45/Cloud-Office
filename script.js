@@ -67,54 +67,11 @@ function ValidatePassword() {
   return false;
 }
 //------- ---Dashboards--------------//
-function openDash(clk, dashName) {
-  var d, e, dashlinks;
-  e = document.getElementsByClassName("dash-content");
-  for (d = 0; d < e.length; d++) {
-    e[d].style.display = "none";
-  }
-  dashlinks = document.getElementsByClassName("board");
-  for (d = 0; d < e.length; d++) {
-    dashlinks[d].className = dashlinks[d].className.replace("is-active", "");
-  }
-  document.getElementById(dashName).style.display = "block";
-  clk.currentTarget.className += " is-active";
+function myFunction(e) {
+  var active = document.querySelectorAll(".is-active1");
+  [].forEach.call(active, function (el) {
+    el.classList.remove("is-active1");
+  });
+  e.target.className = "is-active1";
 }
-//Dashboard Reload
-function refreshIframe() {
-  var ifr = document.getElementsByName("dasha")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe1() {
-  var ifr = document.getElementsByName("dasha")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe2() {
-  var ifr = document.getElementsByName("dashb")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe3() {
-  var ifr = document.getElementsByName("dashc")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe4() {
-  var ifr = document.getElementsByName("dashd")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe5() {
-  var ifr = document.getElementsByName("dashe")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe6() {
-  var ifr = document.getElementsByName("dashf")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe7() {
-  var ifr = document.getElementsByName("dashg")[0];
-  ifr.src = ifr.src;
-}
-function refreshIframe8() {
-  var ifr = document.getElementsByName("dashh")[0];
-  ifr.src = ifr.src;
-}
-// Iframe Load Speed
+//-------------------------------
