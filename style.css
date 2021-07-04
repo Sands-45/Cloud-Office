@@ -266,7 +266,8 @@ textarea {
   margin-top: -10% !important;
 }
 .w3-modal-content,
-iframe {
+iframe,
+embed {
   border-radius: 0.5rem !important;
 }
 /*-----------------------------*/
@@ -310,7 +311,8 @@ aside p {
 .dash1,
 .dash1 iframe,
 .container,
-section {
+section,
+.iframe-container {
   border-radius: 0.3rem !important;
 }
 .menu-list .is-active a {
@@ -382,20 +384,15 @@ a:hover {
 }
 /*------------Dashboards--------------*/
 .is-fullwidth {
-  animation: fadeIn 15s forwards;
-  background: rgba(0, 0, 1, 0.705);
   margin: 0;
-  padding: 0;
+  padding: 1px !important;
   border: 0;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.iframe-container {
+  min-height: 100px;
+  background: #242424 url("./images/preloader.gif") no-repeat 50% center !important;
 }
+
 /*Schedules*/
 ul {
   list-style-type: none;
