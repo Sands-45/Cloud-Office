@@ -315,8 +315,9 @@ section,
 .iframe-container {
   border-radius: 0.3rem !important;
 }
-.menu-list .is-active a {
-  background: #01b1ff;
+.menu-list .is-active1 a,
+li .is-active1 {
+  background: #01b1ff !important;
   color: #000000 !important;
 }
 /* Our Team*/
