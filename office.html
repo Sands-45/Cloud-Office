@@ -70,7 +70,8 @@
             <li class="tab is-active" onclick="openTab(event,'over')">
               <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
             </li>
-            <li class="tab" onclick="openTab(event,'perf');refreshIframe();">
+            <li class="tab"
+              onclick='openTab(event,"perf");document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC"'>
               <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
             </li>
             <li class="tab" onclick="openTab(event,'proj')">
@@ -314,40 +315,78 @@
             <p class="menu-label is-size-6 has-text-weight-bold">
               <i class="fas fa-headset"></i>&nbsp;Agents
             </p>
-            <ul class="menu-list">
-              <li class="board is-active" onclick="openDash(event,'dasha');refreshIframe1();"><a>Agents Overall
-                  Performance</a></li>
-              <li class="board" onclick="openDash(event, 'dashb');refreshIframe2();"><a>Agents Compliments</a></li>
+            <ul class="menu-list" onclick="myFunction(event)">
+              <li class="board is-active1" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
+                document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!";
+                document.getElementById("subhead").innerHTML="Dashboards & Reports"'>
+                <a>Agents Overall
+                  Performance</a>
+              </li>
+
+              <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC";
+                document.getElementById("quote").innerHTML="\"Always have an attitude of gratitude.\"- James R. Nowlin 🤞";
+                document.getElementById("subhead").innerHTML="These are Compliments"'>
+                <a>Agents Compliments</a>
+              </li>
             </ul>
+
             <p class="menu-label is-size-6 has-text-weight-bold">
               <i class="fas fa-users"></i>&nbsp;Administration
             </p>
-            <ul class="menu-list">
-              <li class="board" onclick="openDash(event, 'dashc');refreshIframe3();"><a>Call Center Credits</a></li>
-              <li class="board" onclick="openDash(event, 'dashd');refreshIframe4();"><a>Restaurants Performance</a></li>
-              <li class="board" onclick="openDash(event, 'dashe');refreshIframe5();"><a>Queries & Incomplete Calls</a>
+            <ul class="menu-list" onclick="myFunction(event)">
+              <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC";
+                              document.getElementById("quote").innerHTML="\"Your most unhappy customers are your greatest source of learning.\" - Bill Gates📚";
+                              document.getElementById("subhead").innerHTML="Call Center Credits"'>
+                <a>Call Center Credits</a>
               </li>
-              <li class="board" onclick="openDash(event, 'dashf');refreshIframe6();"><a>Add a member</a></li>
-            </ul>
-            <p class="menu-label is-size-6 has-text-weight-bold">
-              <i class="fas fa-file-signature"></i>&nbsp;Disciplinary
-            </p>
-            <ul class="menu-list">
-              <li class="board" onclick="openDash(event, 'dashg');refreshIframe7();"><a>Warning Tracker</a></li>
-              <li class="board" onclick="openDash(event, 'dashh');refreshIframe8();"><a>Adherence To Work Schedules</a>
+
+              <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC";
+                                            document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍";
+                                            document.getElementById("subhead").innerHTML="Restaurants Performance"'>
+                <a>Restaurants Performance</a>
               </li>
-            </ul>
+
+              <li class="board"
+                onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
+                                                          document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
+                                                          document.getElementById("subhead").innerHTML="Queries & Incomplete Calls"'>
+                <a>Queries & Incomplete Calls</a>
+              </li>
+
+              <li class="board" onclick='document.getElementById("dashboards").src= "";
+                                                          document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
+                                                           document.getElementById("subhead").innerHTML="Recordings"'>
+                <a>Recordings</a>
+              </li>
+
+              <p class="menu-label is-size-6 has-text-weight-bold">
+                <i class="fas fa-file-signature"></i>&nbsp;Disciplinary
+              </p>
+              <ul class="menu-list" onclick="myFunction(event)">
+                <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
+                                              document.getElementById("quote").innerHTML="Discipline is the key to success.";
+                                              document.getElementById("subhead").innerHTML="Warning Tracker"'>
+                  <a>Warning Tracker</a>
+                </li>
+
+                <li class="board"
+                  onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gG";
+                                                                          document.getElementById("quote").innerHTML="Without discipline there is no life at all.";
+                                                                           document.getElementById("subhead").innerHTML="Adherence To Work Schedules"'>
+                  <a>Adherence To Work Schedules</a>
+                </li>
+              </ul>
           </aside>
         </div>
         <!-------------------------Dashboard   A---------------------------- -->
-        <div id="dasha" class="column dash-content has-background-info-dark ml-1 is-9">
+        <div class="column dash-content has-background-info-dark ml-1 is-9">
           <section class="hero has-background-black-ter dash-top is-small">
             <div class="hero-body">
               <div class="container">
-                <h1 class="title is-size-3 has-text-white">
+                <h1 id="subhead" class="title is-size-3 has-text-white">
                   Dashboards & Reports
                 </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
+                <h2 id="quote" class="subtitle is-size-6 has-text-white">
                   I hope you are having a great day 😉!
                 </h2>
               </div>
@@ -382,339 +421,8 @@
             </nav>
           </section>
           <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dasha" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   B---------------------------- -->
-        <div id="dashb" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  These are Compliments&nbsp;<i class="fas fa-award has-text-info-dark"></i>
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  "Always have an attitude of gratitude."- James R. Nowlin 🤞
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashb" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   C---------------------------- -->
-        <div id="dashc" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Call Center Credits
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  "Your most unhappy customers are your greatest source of learning." - Bill Gates📚
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashc" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   D---------------------------- -->
-        <div id="dashd" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Restaurants Performance
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  "Unless you love everybody, you can’t sell anybody." – Dicky Fox 🛍
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashd" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   E---------------------------- -->
-        <div id="dashe" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Queries & Incomplete Calls
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  "Customer service is about empathy." - Chaz Van de Motter😊
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashe" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   F---------------------------- -->
-        <div id="dashf" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Upcoming Changes
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day!
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashf" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4" frameborder="0"
+            <iframe width="100%" id="dashboards" height="500px" class="is-fullwidth" src="" frameborder="0"
               style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   G---------------------------- -->
-        <div id="dashg" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Warning Tracker
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  Discipline is the key to success.
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashg" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-        <!-------------------------Dashboard   H---------------------------- -->
-        <div id="dashh" style="display: none;" class="column dash-content has-background-info-dark ml-1 is-9">
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title is-size-3 has-text-white">
-                  Adherence To Work Schedules
-                </h1>
-                <h2 class="subtitle is-size-6 has-text-white">
-                  Without discipline there's no life at all.
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" name="dashh" height="500px" class="is-fullwidth"
-              src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gG"
-              frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
           </div>
         </div>
       </div>
