@@ -70,10 +70,7 @@
             <li class="tab is-active" onclick="openTab(event,'over')">
               <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
             </li>
-            <li class="tab"
-             onclick='openTab(event,"perf");myFunction(event);document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
-                document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!";
-                document.getElementById("subhead").innerHTML="Dashboards & Reports"'>
+            <li class="tab" onclick='openTab(event,"perf");myFunction1()'>
               <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
             </li>
             <li class="tab" onclick="openTab(event,'proj')">
@@ -422,9 +419,9 @@
               </div>
             </nav>
           </section>
-          <div style="width: 100%; " class="mt-1 iframe-container">
-            <iframe width="100%" id="dashboards" height="500px" class="is-fullwidth" src="" frameborder="0"
-              style="border:0" allowfullscreen style="width:100%"></iframe>
+          <div style="width: 100%; height:500px " class="mt-1 iframe-container">
+            <iframe width="100%" height="100%" id="dashboards" class="is-fullwidth" src="" frameborder="0"
+              style="border:0" scrolling="no" scroll="no"  allowfullscreen style="width:100%"></iframe>
           </div>
         </div>
       </div>
@@ -960,15 +957,14 @@
               <div class="w3-container">
                 <figure class="image is-2by1">
                   <img src="./images/Dash5.png" style="width:100%;cursor:zoom-in"
-                     onclick='document.getElementById("modal05").style.display="block";document.getElementById("dash5").src="https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"'>
+                    onclick='document.getElementById("modal05").style.display="block";document.getElementById("dash5").src="https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"'>
                 </figure>
 
                 <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
                   <span class="w3-button has-background-info w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                   <div class="w3-modal-content w3-animate-zoom">
-                    <iframe id="dash5" width="100%" height="650" class="is-fullwidth"
-                      src=""
-                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+                    <iframe id="dash5" width="100%" height="650" class="is-fullwidth" src="" frameborder="0"
+                      style="border:0" allowfullscreen style="width:100%"></iframe>
                   </div>
                 </div>
               </div>
