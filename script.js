@@ -74,4 +74,14 @@ function myFunction(e) {
   });
   e.target.className = "is-active1";
 }
-//-------------------------------
+
+var isLinkInserted = false;
+function myFunction1() {
+  if (isLinkInserted === false) {
+    document.getElementById("dashboards").src =
+      "https://datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
+    document.body.removeEventListener("click", myFunction1);
+  }
+  isLinkInserted = true;
+}
+//----------------------------------------------------
