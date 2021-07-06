@@ -85,3 +85,8 @@ function myFunction1() {
   isLinkInserted = true;
 }
 //----------------------------------------------------
+//Dashboard Reload
+function refreshIframe() {
+  var ifr = document.getElementsByName("dashboards")[0];
+  ifr.src = ifr.src;
+}
