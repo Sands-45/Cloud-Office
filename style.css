@@ -4,8 +4,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.is-active {
+.is-active a,.is-active {
   color: black;
+  background-color: lightblue !important;
 }
 .center {
   display: flex;
