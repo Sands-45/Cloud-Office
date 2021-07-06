@@ -4,7 +4,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.is-active a,.is-active {
+.hero-foot .is-active a,.hero-foot .is-active {
   color: black;
   background-color: lightblue !important;
 }
