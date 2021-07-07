@@ -259,7 +259,7 @@ textarea {
 .partners-footer {
   background: #eee;
   position: relative;
-  background: #add8e6;
+  background: #3399dc;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -268,7 +268,7 @@ textarea {
   display: block;
 }
 .footer {
-  background: #add8e6 !important;
+  background: #3399dc !important;
   margin-bottom: -13%;
 }
 .hero-wave {
