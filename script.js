@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function ValidatePassword() {
   var password = prompt("Please enter password to proceed", "");
 
+  if (password !== "assurance@123") {
+    document.getElementById("dashboards").style.display = "none";
+  } else {
+    document.getElementById("dashboards").style.display = "block";
+  }
+
   if (password == "assurance@123") {
     return true;
   }
