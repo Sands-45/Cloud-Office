@@ -305,27 +305,28 @@
             </p>
             <ul class="menu-list" onclick="myFunction(event)">
               <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC";
-                              document.getElementById("quote").innerHTML="\"Your most unhappy customers are your greatest source of learning.\" - Bill Gates📚";
-                              document.getElementById("subhead").innerHTML="Call Center Credits"'>
+               document.getElementById("quote").innerHTML="\"Your most unhappy customers are your greatest source of learning.\" - Bill Gates📚";
+               document.getElementById("subhead").innerHTML="Call Center Credits"'>
                 <a>Call Center Credits</a>
               </li>
 
-              <li class="board" onclick='ValidatePassword();document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC";
-                                            document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍";
-                                            document.getElementById("subhead").innerHTML="Restaurants Performance"'>
+              <li class="board" onclick='document.getElementById("dashboards").src = "";
+              document.getElementById("pass-box").style.display ="block";
+              document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍";
+              document.getElementById("subhead").innerHTML="Restaurants Performance"'>
                 <a>Restaurants Performance</a>
               </li>
 
-              <li class="board"
-                onclick='ValidatePassword();document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
-                                                          document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
-                                                          document.getElementById("subhead").innerHTML="Queries & Incomplete Calls"'>
+              <li class="board" onclick='document.getElementById("dashboards").src = "";
+              document.getElementById("pass-box1").style.display ="block";
+                 document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
+                 document.getElementById("subhead").innerHTML="Queries & Incomplete Calls"'>
                 <a>Queries & Incomplete Calls</a>
               </li>
 
               <li class="board" onclick='document.getElementById("dashboards").src= "";
-                                                          document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
-                                                           document.getElementById("subhead").innerHTML="Recordings"'>
+               document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
+               document.getElementById("subhead").innerHTML="Recordings"'>
                 <a>Recordings</a>
               </li>
 
@@ -333,16 +334,17 @@
                 <i class="fas fa-file-signature"></i>&nbsp;Disciplinary
               </p>
               <ul class="menu-list" onclick="myFunction(event)">
-                <li class="board" onclick='ValidatePassword();document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
-                                              document.getElementById("quote").innerHTML="Discipline is the key to success.";
-                                              document.getElementById("subhead").innerHTML="Warning Tracker"'>
+                <li class="board" onclick='document.getElementById("dashboards").src = "";
+              document.getElementById("pass-box2").style.display ="block";
+                document.getElementById("quote").innerHTML="Discipline is the key to success.";
+                document.getElementById("subhead").innerHTML="Warning Tracker"'>
                   <a>Warning Tracker</a>
                 </li>
 
-                <li class="board"
-                  onclick='ValidatePassword();document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gG";
-                                                                          document.getElementById("quote").innerHTML="Without discipline there is no life at all.";
-                                                                           document.getElementById("subhead").innerHTML="Adherence To Work Schedules"'>
+                <li class="board" onclick='document.getElementById("dashboards").src = "";
+              document.getElementById("pass-box3").style.display ="block";
+                  document.getElementById("quote").innerHTML="Without discipline there is no life at all.";
+                  document.getElementById("subhead").innerHTML="Adherence To Work Schedules"'>
                   <a>Adherence To Work Schedules</a>
                 </li>
               </ul>
@@ -350,6 +352,75 @@
         </div>
         <!-------------------------Dashboard ---------------------------- -->
         <div class="column dash-content has-background-info-dark ml-1 is-9">
+
+          <div id="pass-box" class=" has-background-info-dark">
+            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
+            <form action="javascript:;" onsubmit="restaurants(this)">
+              <p id="response" class=" has-text-white center"></p>
+              <div class="field mt-5 center">
+                <p class="control has-icons-left">
+                  <input class="input" id="password" name="pass" type="password" placeholder="********" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <button value="submit" id="submit"
+                class="button center has-background-black-ter has-text-white">SUBMIT</button>
+            </form>
+          </div>
+
+          <div id="pass-box1" class=" has-background-info-dark">
+            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
+            <form action="javascript:;" onsubmit="queries(this)">
+              <p id="response" class=" has-text-white center"></p>
+              <div class="field mt-5 center">
+                <p class="control has-icons-left">
+                  <input class="input" id="password" name="pass" type="password" placeholder="********" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <button value="submit" id="submit"
+                class="button center has-background-black-ter has-text-white">SUBMIT</button>
+            </form>
+          </div>
+
+          <div id="pass-box2" class=" has-background-info-dark">
+            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
+            <form action="javascript:;" onsubmit="warnings(this)">
+              <p id="response" class=" has-text-white center"></p>
+              <div class="field mt-5 center">
+                <p class="control has-icons-left">
+                  <input class="input" id="password" name="pass" type="password" placeholder="********" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <button value="submit" id="submit"
+                class="button center has-background-black-ter has-text-white">SUBMIT</button>
+            </form>
+          </div>
+
+          <div id="pass-box3" class=" has-background-info-dark">
+            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
+            <form action="javascript:;" onsubmit="adherence(this)">
+              <p id="response" class=" has-text-white center"></p>
+              <div class="field mt-5 center">
+                <p class="control has-icons-left">
+                  <input class="input" id="password" name="pass" type="password" placeholder="********" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <button value="submit" id="submit"
+                class="button center has-background-black-ter has-text-white">SUBMIT</button>
+            </form>
+          </div>
+
           <section class="hero has-background-black-ter dash-top is-small">
             <div class="hero-body">
               <div class="container">
