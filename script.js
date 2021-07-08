@@ -60,13 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //Tools access
 function ValidatePassword() {
   var password = prompt("Please enter password to proceed", "");
-
-  if (password !== "assurance@123") {
-    document.getElementById("dashboards").style.display = "none";
-  } else {
-    document.getElementById("dashboards").style.display = "block";
-  }
-
   if (password == "assurance@123") {
     return true;
   }
@@ -95,4 +88,46 @@ function myFunction1() {
 function refreshIframe() {
   var ifr = document.getElementsByName("dashboards")[0];
   ifr.src = ifr.src;
+}
+//---------------------------------------------------
+//Admin Dashboards Access
+function restaurants() {
+  if (document.getElementById("password").value !== "assurance@123") {
+    document.getElementById("dashboards").src = "";
+    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+  } else {
+    document.getElementById("dashboards").src =
+      "https://datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC";
+    document.getElementById("pass-box").style.display = "none";
+  }
+}
+function queries() {
+  if (document.getElementById("password").value !== "assurance@123") {
+    document.getElementById("dashboards").src = "";
+    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+  } else {
+    document.getElementById("dashboards").src =
+      "https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
+    document.getElementById("pass-box1").style.display = "none";
+  }
+}
+function warnings() {
+  if (document.getElementById("password").value !== "assurance@123") {
+    document.getElementById("dashboards").src = "";
+    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+  } else {
+    document.getElementById("dashboards").src =
+      "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
+    document.getElementById("pass-box2").style.display = "none";
+  }
+}
+function adherence() {
+  if (document.getElementById("password").value !== "assurance@123") {
+    document.getElementById("dashboards").src = "";
+    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+  } else {
+    document.getElementById("dashboards").src =
+      "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
+    document.getElementById("pass-box3").style.display = "none";
+  }
 }
