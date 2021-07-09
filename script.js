@@ -99,6 +99,7 @@ function restaurants() {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/c5071f7b-23ac-4a94-9856-5ea7547f1dff/page/jKlQC";
     document.getElementById("pass-box").style.display = "none";
+    document.getElementById("sidenav").style.pointerEvents = "inherit";
   }
 }
 function queries() {
@@ -109,6 +110,7 @@ function queries() {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
     document.getElementById("pass-box1").style.display = "none";
+    document.getElementById("sidenav").style.pointerEvents = "inherit";
   }
 }
 function warnings() {
@@ -119,6 +121,7 @@ function warnings() {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
     document.getElementById("pass-box2").style.display = "none";
+    document.getElementById("sidenav").style.pointerEvents = "inherit";
   }
 }
 function adherence() {
@@ -129,5 +132,6 @@ function adherence() {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
     document.getElementById("pass-box3").style.display = "none";
+    document.getElementById("sidenav").style.pointerEvents = "inherit";
   }
 }
