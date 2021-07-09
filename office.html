@@ -273,7 +273,7 @@
     <div id="perf" class="content-tab is-fluid" style="display: none">
       <div class="columns mt-5 perf-tab">
 
-        <div class="column sidenav is-1.5 has-background-info-dark">
+        <div id="sidenav" class="column sidenav is-1.5 has-background-info-dark">
           <button class="button has-text-white is-medium center mb-3 mt-5 is-inverted has-background-info-dark">
             <span class="icon">
               <i class="fab fa-dyalog"></i>
@@ -312,6 +312,7 @@
 
               <li class="board" onclick='document.getElementById("dashboards").src = "";
               document.getElementById("pass-box").style.display ="block";
+              document.getElementById("sidenav").style.pointerEvents="none";
               document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍";
               document.getElementById("subhead").innerHTML="Restaurants Performance"'>
                 <a>Restaurants Performance</a>
@@ -319,6 +320,7 @@
 
               <li class="board" onclick='document.getElementById("dashboards").src = "";
               document.getElementById("pass-box1").style.display ="block";
+              document.getElementById("sidenav").style.pointerEvents="none";
                  document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
                  document.getElementById("subhead").innerHTML="Queries & Incomplete Calls"'>
                 <a>Queries & Incomplete Calls</a>
@@ -335,14 +337,16 @@
               </p>
               <ul class="menu-list" onclick="myFunction(event)">
                 <li class="board" onclick='document.getElementById("dashboards").src = "";
-              document.getElementById("pass-box2").style.display ="block";
+                document.getElementById("pass-box2").style.display ="block";
+                document.getElementById("sidenav").style.pointerEvents="none";
                 document.getElementById("quote").innerHTML="Discipline is the key to success.";
                 document.getElementById("subhead").innerHTML="Warning Tracker"'>
                   <a>Warning Tracker</a>
                 </li>
 
                 <li class="board" onclick='document.getElementById("dashboards").src = "";
-              document.getElementById("pass-box3").style.display ="block";
+                 document.getElementById("pass-box3").style.display ="block";
+                  document.getElementById("sidenav").style.pointerEvents="none";
                   document.getElementById("quote").innerHTML="Without discipline there is no life at all.";
                   document.getElementById("subhead").innerHTML="Adherence To Work Schedules"'>
                   <a>Adherence To Work Schedules</a>
@@ -354,6 +358,8 @@
         <div class="column dash-content has-background-info-dark ml-1 is-9">
 
           <div id="pass-box" class=" has-background-info-dark">
+            <button onclick="document.getElementById('pass-box').style.display= 'none';
+            document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
             <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
             <form action="javascript:;" onsubmit="restaurants(this)">
               <p id="response" class=" has-text-white center"></p>
@@ -371,6 +377,8 @@
           </div>
 
           <div id="pass-box1" class=" has-background-info-dark">
+            <button onclick="document.getElementById('pass-box1').style.display= 'none';
+                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
             <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
             <form action="javascript:;" onsubmit="queries(this)">
               <p id="response" class=" has-text-white center"></p>
@@ -388,6 +396,8 @@
           </div>
 
           <div id="pass-box2" class=" has-background-info-dark">
+            <button onclick="document.getElementById('pass-box2').style.display= 'none';
+                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
             <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
             <form action="javascript:;" onsubmit="warnings(this)">
               <p id="response" class=" has-text-white center"></p>
@@ -405,6 +415,8 @@
           </div>
 
           <div id="pass-box3" class=" has-background-info-dark">
+            <button onclick="document.getElementById('pass-box3').style.display= 'none';
+                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
             <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
             <form action="javascript:;" onsubmit="adherence(this)">
               <p id="response" class=" has-text-white center"></p>
