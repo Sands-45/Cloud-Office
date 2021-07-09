@@ -103,9 +103,9 @@ function restaurants() {
   }
 }
 function queries() {
-  if (document.getElementById("password").value !== "assurance@123") {
+  if (document.getElementById("password1").value !== "assurance@123") {
     document.getElementById("dashboards").src = "";
-    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+    document.getElementById("response1").innerHTML = "Incorrect password 🤨";
   } else {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/49454e7b-3ef0-4d81-9d68-70a2d118fdf4/page/jKlQC";
@@ -114,9 +114,9 @@ function queries() {
   }
 }
 function warnings() {
-  if (document.getElementById("password").value !== "assurance@123") {
+  if (document.getElementById("password2").value !== "assurance@123") {
     document.getElementById("dashboards").src = "";
-    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+    document.getElementById("response2").innerHTML = "Incorrect password 🤨";
   } else {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
@@ -125,9 +125,9 @@ function warnings() {
   }
 }
 function adherence() {
-  if (document.getElementById("password").value !== "assurance@123") {
+  if (document.getElementById("password3").value !== "assurance@123") {
     document.getElementById("dashboards").src = "";
-    document.getElementById("response").innerHTML = "Incorrect password 🤨";
+    document.getElementById("response3").innerHTML = "Incorrect password 🤨";
   } else {
     document.getElementById("dashboards").src =
       "https://datastudio.google.com/embed/reporting/87519d28-32cd-4408-813d-058e8ddd3887/page/hQAwB";
