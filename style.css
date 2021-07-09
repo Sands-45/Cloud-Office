@@ -1,5 +1,12 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: lightblue;
+  font-family: "Lato", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -524,7 +531,6 @@ ul {
   }
 }
 /*--------------OverView---------------*/
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 #over h1 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -621,4 +627,8 @@ ul {
 }
 #confirm-pass {
   display: none !important;
+}
+/* Delete Button*/
+.delete{
+  float: right;
 }
