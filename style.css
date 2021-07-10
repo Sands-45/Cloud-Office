@@ -654,3 +654,12 @@ ul {
   background: transparent !important;
   height: 40vw;
 }
+/*Dashboads Media screen */
+@media screen and (max-width:1406px){
+#dashboard-container{
+  height: 55vh !important;
+}
+#sidenav li{
+  font-size:.8rem ;
+}
+}
