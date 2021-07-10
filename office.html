@@ -40,20 +40,76 @@
                 href="https://drive.google.com/drive/folders/1fQogtY11u70m2in3m061jBKLzOusjvRW?usp=sharing"
                 id="HyperLink1" onclick="return ValidatePassword();" class="navbar-item"> Tools </a>
 
-              <a href="./forms/index.html" target="_blank" class="navbar-item"> Forms </a>
-              <span class="navbar-item">
-                <a href="https://join.slack.com/t/dialndine/shared_invite/zt-rujxd0k2-BaeGPsJYldCA5zfBAHB3Mg"
-                  target="_blank" class="button is-info is-inverted">
-                  <span class="icon">
-                    <i class="fab fa-slack"></i>
-                  </span>
-                  <span>Our Work-Space</span>
-                </a>
-              </span>
+              <ul onmouseleave="document.getElementById('dropdown-content').style.display='none'" class="navbar-item">
+                <li onmouseover="document.getElementById('dropdown-content').style.display='block'">
+                  <a id="dropdown" href="#"> Forms&nbsp;
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+                <div id="dropdown-content">
+                  <li>
+                    <a onclick="document.getElementById('modal01').style.display='block'">Compliments
+                    </a>
+                  </li>
+                  <li>
+                    <a onclick="document.getElementById('modal02').style.display='block'">Queries</a>
+                  </li>
+                  <li>
+                    <a onclick="document.getElementById('modal03').style.display='block'">Incomplete</a>
+                  </li>
+                </div>
+              </ul>
+
+              <!--------Drop Down Modals-------->
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content forms-content w3-animate-zoom">
+                  <iframe class="center"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeclf0ED7z2FYoKq78QMShSI4vi9HekZFy9for0GoYd9gYbBg/viewform?embedded=true"
+                    width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+              <div class="w3-modal-content forms-content w3-animate-zoom">
+                <iframe class="center"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSesYHJR5PxbKtJ3RCeciwyBYJgBm0xMTRqLrWEz8epocbMAhw/viewform?embedded=true"
+                  width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content forms-content w3-animate-zoom">
+              <iframe class="center"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSefk-lKqC9cVPjsRbuZXdyTkfAClk-O3bjR9qfFpGId65k2kw/viewform?embedded=true"
+                width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
+              </iframe>
             </div>
           </div>
         </div>
-      </nav>
+        <!--------End of Drop Down Modals-------->
+
+        <span class="navbar-item">
+          <a href="https://join.slack.com/t/dialndine/shared_invite/zt-rujxd0k2-BaeGPsJYldCA5zfBAHB3Mg" target="_blank"
+            class="button is-info is-inverted">
+            <span class="icon">
+              <i class="fab fa-slack"></i>
+            </span>
+            <span>Our Work-Space</span>
+          </a>
+        </span>
+    </div>
+    </div>
+    </div>
+    </nav>
     </div>
 
     <div class="hero-body">
