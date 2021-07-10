@@ -2,1259 +2,666 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="./images/favicon.ico.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="./images/favicon.ico.ico" />
 </head>
 
 <body>
-  <section class="hero is-info is-small">
-    <div id="back-to-top" class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <span class="ml-3 navbar-item">
-              <a href="./index.html" target="_blank"
-                class="button has-text-white is-size-4 is-inverted has-background-info-dark">
-                <span class="icon">
-                  <i class="fab fa-dyalog"></i>
-                </span>
-                <span>Dial n' Dine</span>
-              </a>
-            </span>
-            <span class="navbar-burger has-text-white" data-target="navbarMenuHeroB">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroB" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active"> Home </a>
-              <a target="_blank"
-                href="https://drive.google.com/drive/folders/1fQogtY11u70m2in3m061jBKLzOusjvRW?usp=sharing"
-                id="HyperLink1" onclick="return ValidatePassword();" class="navbar-item"> Tools </a>
-
-              <ul onmouseleave="document.getElementById('dropdown-content').style.display='none'" class="navbar-item">
-                <li onmouseover="document.getElementById('dropdown-content').style.display='block'">
-                  <a id="dropdown" href="#"> Forms&nbsp;
-                    <span class="icon is-small">
-                      <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </li>
-                <div id="dropdown-content">
-                  <li>
-                    <a onclick="document.getElementById('modal01').style.display='block'">Compliments
-                    </a>
-                  </li>
-                  <li>
-                    <a onclick="document.getElementById('modal02').style.display='block'">Queries</a>
-                  </li>
-                  <li>
-                    <a onclick="document.getElementById('modal03').style.display='block'">Incomplete</a>
-                  </li>
-                </div>
-              </ul>
-
-              <!--------Drop Down Modals-------->
-              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <div class="w3-modal-content forms-content w3-animate-zoom">
-                  <iframe class="center"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeclf0ED7z2FYoKq78QMShSI4vi9HekZFy9for0GoYd9gYbBg/viewform?embedded=true"
-                    width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
-                  </iframe>
-                </div>
-              </div>
-            </div>
-
-            <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
-              <div class="w3-modal-content forms-content w3-animate-zoom">
-                <iframe class="center"
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSesYHJR5PxbKtJ3RCeciwyBYJgBm0xMTRqLrWEz8epocbMAhw/viewform?embedded=true"
-                  width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
-                </iframe>
-              </div>
-            </div>
-          </div>
-
-          <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
-            <div class="w3-modal-content forms-content w3-animate-zoom">
-              <iframe class="center"
-                src="https://docs.google.com/forms/d/e/1FAIpQLSefk-lKqC9cVPjsRbuZXdyTkfAClk-O3bjR9qfFpGId65k2kw/viewform?embedded=true"
-                width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
-              </iframe>
-            </div>
-          </div>
-        </div>
-        <!--------End of Drop Down Modals-------->
-
-        <span class="navbar-item">
-          <a href="https://join.slack.com/t/dialndine/shared_invite/zt-rujxd0k2-BaeGPsJYldCA5zfBAHB3Mg" target="_blank"
-            class="button is-info is-inverted">
-            <span class="icon">
-              <i class="fab fa-slack"></i>
-            </span>
-            <span>Our Work-Space</span>
-          </a>
-        </span>
-    </div>
-    </div>
-    </div>
-    </nav>
-    </div>
-
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">Our Cloud Office</p>
-        <p class="subtitle is-size-6"><i>"The art of Performance"</i></p>
-      </div>
-    </div>
-
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-centered has-background-info-dark">
-        <div class="container">
-          <ul>
-            <li class="tab is-active" onclick="openTab(event,'over')">
-              <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
-            </li>
-            <li id="perf-btn" class="tab" onclick='openTab(event,"perf");myFunction1();refreshIframe()'>
-              <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
-            </li>
-            <li class="tab" onclick="openTab(event,'proj')">
-              <a><i class="fas fa-project-diagram"></i>&nbsp;Projects</a>
-            </li>
-            <li class="tab" onclick="openTab(event,'incent')">
-              <a><i class="fas fa-award"></i>&nbsp;Incentives</a>
-            </li>
-            <li class="tab" onclick="openTab(event,'sched')">
-              <a><i class="fas fa-calendar-alt"></i>&nbsp;Schedules</a>
-            </li>
-            <li class="tab" onclick="openTab(event,'news')">
-              <a><i class="far fa-newspaper"></i>&nbsp;Newsletter</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </section>
-  <!---------End of Hero Section-------->
-
-  <!-------------------------Start of Body---------------------------- -->
-  <div class="container section">
-
-    <!-------------------------Start of Overview---------------------------- -->
-    <div id="over" class="content-tab">
-
-      <div class="columns center">
-        <div class="column is-four-fifths ">
-          <div class="overview-left">
-            <!--Content before waves-->
-            <div class="inner-header flex">
-              <h1 class="p-3">O<span>vervie</span>w</h1>
-              <p class="pl-5 pr-5">In today's business, customer service is crucial. People can tolerate product
-                imperfections
-                as long as
-                the company is
-                ready to go above and beyond to satisfy their needs. No wonder that organizations in various industries
-                invest in call
-                centers. This is a great way to provide top-notch customer service. Not only allows your team to easily
-                connect with
-                clients but provides you with the best tools to control and improve their work.</p>
-            </div>
-            <!--Waves Container-->
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-              <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-              </defs>
-              <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-              </g>
-            </svg>
-            <!--Waves end-->
-          </div>
-        </div>
-      </div>
-      <!--------------------Section---------------->
-      <div id="over-section" class="columns has-background-info">
-
-        <div class="column is-one-third">
-          <article class="card has-background-info" id="home">
-            <div class="card-content">
-              <p class="subtitle has-text-white center"><b>Sc<span>heduli</span>ng</b></p>
-              <p class="has-text-white">
-                Having the ability to work flexible hours empowers your
-                employees. They can have better control of their lives in
-                these uncertain times.
-                <img src="./images/schedule.png" style="max-width: 220px" class="center-img" />
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="column is-one-third">
-          <article class="card has-background-info" id="home">
-            <div class="card-content">
-              <p class="subtitle has-text-white center"><b>Pe<span>rformanc</span>es</b></p>
-              <p class="has-text-white">
-                Key performance indicators (KPIs) are measurable, monitorable, and visible signs that a task has
-                been achieved or not. When properly, used KPIs are one of the most powerful performance management
-                tools in growing our call center.
-                <img src="./images/performances.png" style="max-width: 235px" class="center-img" />
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="column is-one-third">
-          <article class="card has-background-info" id="home">
-            <div class="card-content">
-              <p class="subtitle has-text-white center"><b>P<span>roject</span>s</b></p>
-              <p class="has-text-white">
-                A better way for agents to grow is by letting them know where they excel, and where they need to
-                improve.
-                <br />
-                <img src="./images/projects.png" style="max-width: 200px" class="center-img" />
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div id="over-section" class="container  center has-background-info">
-        <article class="message has-background-info" id="home1">
-          <div class="card-content">
-            <p class="subtitle has-text-white center"><b>In<span>centiv</span>es</b></p>
-            <p class="has-text-white">
-              Working as a <b>center</b> agent can seem like a tedious and thankless job. In some cases,
-              <b>agents</b> spend hours talking to people who don’t want to be on the phone, any more than the
-              agents themselves. Even in the best circumstances — where customers are calling to purchase
-              high-demand products — not only can each day look the same…each hour can as well. So it’s not
-              surprising that some call center agents take an “eight and skate” approach to their shifts. It’s
-              equally unsurprising that some call centers are satisfied to settle for employees who coast through
-              the days as long as they’re not directly alienating customers. But difficult is far from impossible.
-              It’s a matter of identifying the behaviors that impact the bottom line and then finding the right way
-              to implement a call center incentive program, that also boosts overall agent <b>morale and
-                performance</b>.
-          </div>
-        </article>
-      </div>
-
-      <div class="container bottom-overview p-3 has-background-info">
-        <div class="columns">
-          <div class="column">
-            <div class="card card-equal-height has-text-info-light has-background-info is-size-7">
-              <div class="card-content">
-                <p class="title is-4 center has-text-info-light">Tracking Performances</p>
-                <div class="content">
-                  <p>
-                    Call center agent’s priority is making their day-to-day jobs run smoothly. Unlike managers or
-                    high-level executives, agents are less concerned about the data itself. They’re more interested in
-                    how management uses that data. Performance tracking monitoring shapes the environment that agents
-                    work in every day.</p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <p class="card-footer-item">
-                  <span>Share on <a href="#"> Whatsapp <i class="fab fa-whatsapp"></i></a></span>
-                </p>
-                <p class="card-footer-item">
-                  <span>View on <a href="#"> Slack <i class="fab fa-slack"></i></a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card card-equal-height has-text-info-light has-background-info is-size-7">
-              <div class="card-content">
-                <p class="title is-4 center has-text-info-light">Importance of Feedback</p>
-                <div class="content">
-                  <p>
-                    Working as an agent is a stressful endeavor, and it’s up to managers to cultivate a positive
-                    working atmosphere, foster a sense of ownership, motivate the team to succeed, and most
-                    importantly,
-                    to stay informed on contact center best practices.With technology advances now make it easier to
-                    measure and optimize operations.</p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <p class="card-footer-item">
-                  <span>Share on <a href="#"> Whatsapp <i class="fab fa-whatsapp"></i></a></span>
-                </p>
-                <p class="card-footer-item">
-                  <span>View on <a href="#"> Slack <i class="fab fa-slack"></i></a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card card-equal-height has-text-info-light  has-background-info is-size-7">
-              <div class="card-content">
-                <p class="title is-4 center has-text-info-light">Advantages of Cloud Office</p>
-                <div class="content">
-                  <p>
-                    Cloud office offers our call center many benefits: It allows us to update and give feedback on
-                    what is essential with more flexibility and transparency. With the growing number of web-enabled
-                    devices used in today's business environment (e.g. laptops), access to updates and reports is even
-                    easier.
-                  </p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <p class="card-footer-item">
-                  <span>Share on <a href="#"> Whatsapp <i class="fab fa-whatsapp"></i></a></span>
-                </p>
-                <p class="card-footer-item">
-                  <span>View on <a href="#"> Slack <i class="fab fa-slack"></i></a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!----------End of Overview------------->
-
-    <!-------------------------Start of Performances---------------------------- -->
-    <div id="perf" class="content-tab is-fluid" style="display: none">
-      <div class="columns mt-5 perf-tab">
-
-        <!-------------------------Dashboard Side Nav---------------------------- -->
-        <div id="sidenav" class="column sidenav is-1.5 has-background-info-dark">
-          <button class="button has-text-white is-medium center mb-3 mt-5 is-inverted has-background-info-dark">
-            <span class="icon">
-              <i class="fab fa-dyalog"></i>
-            </span>
-            <span>Dial n' Dine</span>
-          </button>
-          </span>
-          <aside class="menu ml-5 pt-5 ">
-            <p class="menu-label is-size-6 has-text-weight-bold">
-              <i class="fas fa-headset"></i>&nbsp;Agents
-            </p>
-            <ul class="menu-list" onclick="myFunction(event)">
-              <li class="board is-active1" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/55d26a2f-d344-4d37-a8fb-34c792c804d1/page/jKlQC";
-                document.getElementById("quote").innerHTML="I hope you are having a great day 😉\!";
-                document.getElementById("subhead").innerHTML="Dashboards & Reports"'>
-                <a>Agents Overall
-                  Performance</a>
-              </li>
-
-              <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/c00b9e97-0fd5-422c-b3c2-fe1ec1b933e6/page/95gGC";
-                document.getElementById("quote").innerHTML="\"Always have an attitude of gratitude.\"- James R. Nowlin 🤞";
-                document.getElementById("subhead").innerHTML="These are Compliments"'>
-                <a>Agents Compliments</a>
-              </li>
-            </ul>
-
-            <p class="menu-label is-size-6 has-text-weight-bold">
-              <i class="fas fa-users"></i>&nbsp;Administration
-            </p>
-            <ul class="menu-list" onclick="myFunction(event)">
-              <li class="board" onclick='document.getElementById("dashboards").src= "https:/\/datastudio.google.com/embed/reporting/2e1b5d10-d855-44b6-b498-953932a08a59/page/jKlQC";
-               document.getElementById("quote").innerHTML="\"Your most unhappy customers are your greatest source of learning.\" - Bill Gates📚";
-               document.getElementById("subhead").innerHTML="Call Center Credits"'>
-                <a>Call Center Credits</a>
-              </li>
-
-              <li class="board" onclick='document.getElementById("dashboards").src = "";
-              document.getElementById("pass-box").style.display ="block";
-              document.getElementById("sidenav").style.pointerEvents="none";
-              document.getElementById("quote").innerHTML="\"Unless you love everybody, you can’t sell anybody.\" – Dicky Fox 🛍";
-              document.getElementById("subhead").innerHTML="Restaurants Performance"'>
-                <a>Restaurants Performance</a>
-              </li>
-
-              <li class="board" onclick='document.getElementById("dashboards").src = "";
-              document.getElementById("pass-box1").style.display ="block";
-              document.getElementById("sidenav").style.pointerEvents="none";
-                 document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
-                 document.getElementById("subhead").innerHTML="Queries & Incomplete Calls"'>
-                <a>Queries & Incomplete Calls</a>
-              </li>
-
-              <li class="board" onclick='document.getElementById("dashboards").src= "";
-               document.getElementById("quote").innerHTML="\"Customer service is about empathy.\" - Chaz Van de Motter😊";
-               document.getElementById("subhead").innerHTML="Recordings"'>
-                <a>Recordings</a>
-              </li>
-
-              <p class="menu-label is-size-6 has-text-weight-bold">
-                <i class="fas fa-file-signature"></i>&nbsp;Disciplinary
-              </p>
-              <ul class="menu-list" onclick="myFunction(event)">
-                <li class="board" onclick='document.getElementById("dashboards").src = "";
-                document.getElementById("pass-box2").style.display ="block";
-                document.getElementById("sidenav").style.pointerEvents="none";
-                document.getElementById("quote").innerHTML="Discipline is the key to success.";
-                document.getElementById("subhead").innerHTML="Warning Tracker"'>
-                  <a>Warning Tracker</a>
-                </li>
-
-                <li class="board" onclick='document.getElementById("dashboards").src = "";
-                 document.getElementById("pass-box3").style.display ="block";
-                  document.getElementById("sidenav").style.pointerEvents="none";
-                  document.getElementById("quote").innerHTML="Without discipline there is no life at all.";
-                  document.getElementById("subhead").innerHTML="Adherence To Work Schedules"'>
-                  <a>Adherence To Work Schedules</a>
-                </li>
-              </ul>
-          </aside>
-        </div>
-        <!-------------------------End of Dashboard Side Nav---------------------------- -->
-
-        <!-------------------------End of Dashboard ---------------------------- -->
-        <div class="column dash-content has-background-info-dark ml-1 is-9">
-
-          <!-------------------------Restricted Dashboards---------------------------- -->
-          <div id="pass-box" class=" has-background-info-dark">
-            <button onclick="document.getElementById('pass-box').style.display= 'none';
-            document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
-            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
-            <form action="javascript:;" onsubmit="restaurants(this)">
-              <p id="response" class=" has-text-white center">Restricted Access 🔒</p>
-              <div class="field mt-5 center">
-                <p class="control has-icons-left">
-                  <input class="input" id="password" name="pass" type="password" placeholder="********" required>
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-              </div>
-              <button value="submit" id="submit"
-                class="button center has-background-black-ter has-text-white">SUBMIT</button>
-            </form>
-          </div>
-
-          <div id="pass-box1" class=" has-background-info-dark">
-            <button onclick="document.getElementById('pass-box1').style.display= 'none';
-                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
-            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
-            <form action="javascript:;" onsubmit="queries(this)">
-              <p id="response1" class=" has-text-white center">Restricted Access 🔒</p>
-              <div class="field mt-5 center">
-                <p class="control has-icons-left">
-                  <input class="input" id="password1" name="pass" type="password" placeholder="********" required>
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-              </div>
-              <button value="submit" id="submit"
-                class="button center has-background-black-ter has-text-white">SUBMIT</button>
-            </form>
-          </div>
-
-          <div id="pass-box2" class=" has-background-info-dark">
-            <button onclick="document.getElementById('pass-box2').style.display= 'none';
-                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
-            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
-            <form action="javascript:;" onsubmit="warnings(this)">
-              <p id="response2" class=" has-text-white center">Restricted Access 🔒</p>
-              <div class="field mt-5 center">
-                <p class="control has-icons-left">
-                  <input class="input" id="password2" name="pass" type="password" placeholder="********" required>
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-              </div>
-              <button value="submit" id="submit"
-                class="button center has-background-black-ter has-text-white">SUBMIT</button>
-            </form>
-          </div>
-
-          <div id="pass-box3" class=" has-background-info-dark">
-            <button onclick="document.getElementById('pass-box3').style.display= 'none';
-                        document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
-            <h4 class="mt-5 has-text-light has-text-weight-bold center">ENTER PASSWORD</h4>
-            <form action="javascript:;" onsubmit="adherence(this)">
-              <p id="response3" class=" has-text-white center">Restricted Access 🔒</p>
-              <div class="field mt-5 center">
-                <p class="control has-icons-left">
-                  <input class="input" id="password3" name="pass" type="password" placeholder="********" required>
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-              </div>
-              <button value="submit" id="submit"
-                class="button center has-background-black-ter has-text-white">SUBMIT</button>
-            </form>
-          </div>
-          <!-------------------------End of Restricted Dashboards ---------------------------- -->
-
-          <section class="hero has-background-black-ter dash-top is-small">
-            <div class="hero-body">
-              <div class="container">
-                <h1 id="subhead" class="title is-size-3 has-text-white">
-                  Dashboards & Reports
-                </h1>
-                <h2 id="quote" class="subtitle is-size-6 has-text-white">
-                  I hope you are having a great day 😉!
-                </h2>
-              </div>
-            </div>
-          </section>
-          <section class="has-background-black-ter has-text-white mt-1 p-3">
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Reports</p>
-                  <p class="title has-text-white">8</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Data Source</p>
-                  <p class="title has-text-white">10</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Agents</p>
-                  <p class="title has-text-white">68</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="heading">Restaurants</p>
-                  <p class="title has-text-white">291</p>
-                </div>
-              </div>
-            </nav>
-          </section>
-          <div id="dashboard-container" style="width: 100%; height:500px " class="mt-1 iframe-container">
-            <iframe width="100%" height="100%" name="dashboards" id="dashboards" class="is-fullwidth" src=""
-              frameborder="0" style="border:0" scrolling="no" scroll="no" allowfullscreen style="width:100%"></iframe>
-          </div>
-        </div>
-      </div>
-      <!------------------------- End of Dashboards ---------------------------- -->
-    </div>
-    <!-----------End of performances-------------->
-
-
-
-    <!-------------------------Start of Projects---------------------------- -->
-    <div id="proj" class="content-tab is-fluid" style="display: none">
-
-      <section class="section has-background-info">
-        <article class="media notification has-text-info has-background-info-light">
-          <div class="content">
-            <h1 class="title is-size-4 center">
-              <i class="fas fa-project-diagram"></i>&nbsp;Projects
-            </h1>
-            <p class="is-size-6 center">
-              This is the most important step in any incentive program. Successful call center incentive programs focus
-              on
-              things that improve company performance — and steer clear of things that undermine it. Focusing on time
-              spent per call, for example, encourages employees to complete calls quickly rather than ensuring that the
-              caller’s needs have been met. Focusing on first-call resolution discourages agents from asking for help
-              when
-              they need it. The key to getting it right is to first decide what you want employees to do and, only then,
-              think about how to motivate them to do it.
-            </p>
-          </div>
-        </article>
-
-        <div class="columns">
-
-          <div class="column has-background-info">
-
-            <div class="columns">
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img
-                          src="https://www.glassdoor.com/employers/app/uploads/sites/2/2021/02/GoogleDrive_640X469_5-Best-Practices-for-Writing-Great-Job-Descriptions-02-1280x992.png"
-                          alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
-                            ago|
-                            Jan 2021</small>
-                          <br>
-                          Introduce and Get Agents To Sign Job Description<br>
-                          Introduce New Policies & Update Agents.<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-success">Completed</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img
-                          src="https://www.jotform.com/blog/wp-content/uploads/2019/11/The-Ultimate-Performance-Appraisal-Guide-featured.png"
-                          alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>First Quater</strong> <small>@nomsanx</small> <small class="has-text-link">3months
-                            ago|
-                            Feb & Mar 2021</small>
-                          <br>
-                          Communicate Call Center Metrics With The Agents.<br>
-                          Introduce Performance Appraisals.<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-success">Completed</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="columns">
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="https://www.commbox.io/wp-content/uploads/2019/10/11-1-1024x600.jpg" alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Second Quater</strong> <small>@sandsqa</small> <small class="has-text-link">1 months
-                            ago| May & June</small>
-                          <br>
-                          Complimentry Incentives To Reduce Wrong Orders<br>
-                          Management Customer Service Training<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-primary">In Progress</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img
-                          src="https://website-assets-fd.freshworks.com/attachments/ckjv6jx7700lscjfzuyspsnv0-customer-service-team-training.one-half.png"
-                          alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Second Quater</strong> <small>@quality_team</small> <small class="has-text-link">1
-                            months ago| Jun</small>
-                          <br>
-                          Wrong Order Reduction Plan.<br>
-                          Staff Customer Service Training.<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-primary">In Progress</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-
-            <div class="columns">
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="https://www.commbox.io/wp-content/uploads/2019/10/12-1024x600.jpg" alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Third Quater</strong> <small>@samkele, @mbona</small> <small
-                            class="has-text-link">1months ago| Jul</small>
-                          <br>
-                          Track Compliance To Increase 1st Call Resolution<br>
-                          Product Knowlege Training (Full House)<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-danger">Not yet Started</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="box equal-height">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="https://www.dumblittleman.com/wp-content/uploads/2014/04/1-41-696x435.jpg"
-                          alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Fourth Quater</strong> <small>@nomsanx</small> <small class="has-text-link">5months
-                            ago</small>
-                          <br>
-                          Minimize Query Rate By Ensuring Effective Communication For Both Store And The Call Center<br>
-                        <div class="field is-grouped is-grouped-multiline">
-                          <div class="control">
-                            <div class="tags has-addons">
-                              <a class="tag is-danger">Not Yet Started</a>
-                              <a class="tag is-delete"></a>
-                            </div>
-                          </div>
-                          </p>
-                        </div>
-                        <nav class="level is-mobile">
-                          <div class="level-left">
-                            <a class="level-item" aria-label="reply">
-                              <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="retweet">
-                              <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <a class="level-item" aria-label="like">
-                              <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </nav>
-                      </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </div>
-    <!--------------End of projects----------------->
-
-
-    <!-------------------------Start of Incentives---------------------------- -->
-    <div id="incent" class="content-tab center" style="display: none">
-      <div class="container has-background-info">
-
-        <div class="column has-background-info">
-          <p class="is-size-4 has-text-weight-bold pt-5"><i class="fas fa-award"></i>Incentives</p>
-          <p class="is-size-6 p-5">
-            Call centre agents are a special breed of human, they are expected to adapt to new <b>IT</b> and
-            <u><b>CRM</b></u> systems at
-            the drop of a hat, and progression opportunities are few and far between due to flat structures.As such,
-            it only makes sense that incentive ideas for call centre staff should be tailor-made for the environment
-            in which they work. Playing our trade in a call centre can be a tough gig; having a job that hinges on
-            this type of people-centric work has been proven to require very focussed emotional management, and can
-            often lead to stress and burnout if conditions aren't ideal.Fortunately, there are simple ways to boost
-            morale among the folks that serve as the voice of our company on a daily basis.<br><br>
-            <button class="button center is-info ">⇩ See Active ⇩</butoon>
-          </p>
-        </div>
-
-        <div class="columns m-3 has-background-info">
-
-          <div class="column is-half">
-            <div class="card is-incentive has-background-info">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img src="./images/update.jpg" alt="slack">
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="title is-4">Upsell/Cross-Sell Incentives</p>
-                <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
-
-                <div class="notification is-info is-incentive-child">
-                  Upselling is a sales technique where the customer is offered a higher priced option or add-on to the
-                  product they are purchasing.While is offering a complementary product or service that the original
-                  product does not cover. <strong>This is essential for our businesses, but how
-                    exactly?</strong>...1.Increases Profits, 2.Increases Customers Loyalty, 3. Increase in ROI and the
-                  list goes on .<a
-                    href="https://mapmycustomers.me/blog/the-importance-of-upselling-and-cross-selling-in-sales/">For
-                    more read this article</a>.
-                </div>
-
-              </div>
-              <footer class="card-footer">
-                <a href="https://dialndine.slack.com/archives/C01J9DLFQJH" target="_blank" class="card-footer-item">See
-                  Full Details Here&nbsp;<i class="fab fa-slack"></i></a>
-              </footer>
-            </div>
-          </div>
-
-          <div class="column is-half">
-            <div class="card is-incentive has-background-info">
-              <div class="card-image">
-                <figure class="image  is-2by1">
-                  <img src="./images/Dash5.png" alt="Coded Mails">
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="title is-4">Complimentary Incentive</p>
-                <p class="subtitle is-6"><a target="_blank" href="#">@qa_assuarence</a></p>
-
-                <div class="notification is-info is-incentive-child">
-                  Receiving these compliments from customers is a boon for business and a company's reputation.
-                  Compliments in general make a person feel good. Receiving compliments from customers means that you
-                  have done something special and they in turn feed those positive feelings back to you.
-                  <strong><i>“When I compliment you, I compliment myself, because I am who I associate with.” – Jarod
-                      Kintz.</i></strong><a
-                    href="https://www.silvicarosca.com/post/2017/05/29/the-power-of-compliments-in-business"> See the
-                    benefits Here</a>.
-                </div>
-
-                <footer class="card-footer">
-                  <a href="https://dialndine.slack.com/archives/C01J9DLFQJH" target="_blank"
-                    class="card-footer-item">See
-                    Full Details Here&nbsp;<i class="fab fa-slack"></i></a>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="incentive" class="columns mt-5">
-          <div class="column is-half">
-            <article class=" is-info">
-              <div class="subtitle center">
-                <p class="has-text-weight-bold has-text-white">Upsell Updates On Slack</p>&nbsp;<button
-                  class="button is-dark"><a href="https://dialndine.slack.com/archives/C01J9DLFQJH"><i
-                      class="fab fa-slack"></i></a></button>
-              </div>
-
-              <div class="w3-container">
-                <figure class="image is-2by1">
-                  <img src="./images/update.jpg" style="width:100%;cursor:zoom-in"
-                    onclick="document.getElementById('modal01').style.display='block'">
-                </figure>
-
-                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                  <div class="w3-modal-content w3-animate-zoom">
-                    <iframe width="100%" height="650" class="is-fullwidth"
-                      src="https://datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"
-                      frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="column is-half">
-            <article class=" is-info">
-              <div class="subtitle center">
-                <p class="has-text-weight-bold has-text-white">Compliments Report</p>&nbsp;<button
-                  class="button is-dark">Click Image To
-                  View</button>
-              </div>
-
-              <div class="w3-container">
-                <figure class="image is-2by1">
-                  <img src="./images/Dash5.png" style="width:100%;cursor:zoom-in"
-                    onclick='document.getElementById("modal05").style.display="block";document.getElementById("dash5").src="https:/\/datastudio.google.com/embed/reporting/6960b1f2-db1f-4f65-8491-51684dca0423/page/95gGC"'>
-                </figure>
-
-                <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
-                  <span class="w3-button has-background-info w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                  <div class="w3-modal-content w3-animate-zoom">
-                    <iframe id="dash5" width="100%" height="650" class="is-fullwidth" src="" frameborder="0"
-                      style="border:0" allowfullscreen style="width:100%"></iframe>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!------------------------End of Incentive------------------------->
-
-    <!-------------------------Start of Schedules---------------------------- -->
-    <div id="sched" class="content-tab" style="display: none">
-      <h1 class="center">Demo Calendar</h1>
-
-      <div class="month">
-        <ul>
-          <li class="prev">&#10094;</li>
-          <li class="next">&#10095;</li>
-          <li>
-            August<br>
-            <span style="font-size:18px">2021</span>
-          </li>
-        </ul>
-      </div>
-
-      <ul class="weekdays">
-        <li>Mo</li>
-        <li>Tu</li>
-        <li>We</li>
-        <li>Th</li>
-        <li>Fr</li>
-        <li>Sa</li>
-        <li>Su</li>
-      </ul>
-
-      <ul class="days">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li><span class="active">10</span></li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-      </ul>
-    </div>
-    <!-----------------------End of Schedules--------------------------->
-
-    <!-------------------------Start of Newsletter---------------------------- -->
-    <div id="news" class="content-tab has-background-info-light" style="display: none">
-      <div class="message-header has-background-info">
-        <h2 class="title center has-text-white pb-2"><i class="far fa-newspaper"></i>&nbsp;Newsletter</h2>
-      </div>
-
-      <img class="center pt-5" src="./images/news-head.jpg" alt="News" style="max-width: 700px;height: auto;">
-      <div class="notification">
-        <h1 class="subtitle center is-size-3">Here is your weekly digest</h1>
-        <p class="center">
-          You’ve put lots of thought into your employee newsletter.You hit ‘send’ to all-staff……and patiently wait to
-          hear what your colleagues think.But, at the end of the day, all you hear are crickets.<br>
-          Did they like the content?<br>
-          Did they even read your newsletter (or did it go straight to trash)? 😬<br>
-          It’s hard to captivate your employees when there are so many different channels competing for their
-          attention.On top of that, employees might be spread out in different offices or working remotely, and you
-          really need them to read your newsletter to get on the same page.So how do you make sure they read it?To
-          transform your employees from apathetic newsletter deleters to engaged readers, consider what kind of
-          content they really want.Your newsletter can’t all be corporate announcements. Like any great piece of
-          content, there has to be variety
-          to capture—and keep—your readers’ attention.The most engaging internal newsletters feature a mix of
-          employee-focused content, organization-focused
-          content, and customer-focused content.Want to strike that balance? Well, continue reading.
-        </p><br>
-        <button class="button is-large is-info center">READ MORE</button>
-        <hr>
-        <div class="columns">
-
-          <div id="news" class="column is-half">
-            <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
-            <h1 class="subtitle center  is-size-3">Importance of Brainstorming</h1>
-            <p>Brainstorming is a way to provide call centers the means to generate new ideas and even tackle complex
-              problems. Depending on what the situation warrants, brainstorming sessions can be conducted in small
-              groups, large groups or individually. In addition, call centers can choose one of several brainstorming
-              techniques to reach their goals.</p>
-          </div>
-
-          <div id="news" class="column is-half">
-            <img class="pt-5" src="./images/news.jpg" alt="News" style="max-width: 300px;height: auto;">
-            <h1 class="subtitle center is-size-3">Is Teamwork That Crucial ?</h1>
-            <p>Championship teams have something in common across all sports: they work together as a machine. In her
-              recent article, Lynn Hunsaker says that companies need to pull together and collaborate like sports teams
-              across all departments in order to increase customer loyalty, revenue, and other valuable components of
-              success. One specific area where collaboration across all levels of the company is important is the
-              customer experience. Without collaboration, the customer experience will fail.</p>
-          </div>
-        </div>
-
-        <img class="center pt-5" src="./images/menu-update.png" alt="News" style="max-width: 500px;height: auto;">
-        <div class="notification">
-          <h1 class="subtitle center is-size-3">Updates</h1>
-          <p class="center">
-            By now you should know that we deliver for mahala! We’ve been giving you free delivery since day one, so you
-            might as well call us amabhoza of this delivery game. Whether you call in or order online, you can get an
-            oh-so-rhalising pizza delivered to your door! And when your nearest Debonairs Pizza is within a 3km driving
-            distance, you get your fave pizza delivered for free!<br>
-            But there’s more than one way to get a box of your fave pizza onto your table. We have 3 ways for you to
-            order from Debonairs Pizza. Choose the one that works best for you.
-          </p><br>
-          <button class="button is-large is-info center">Browse Menus</button>
-          <p class="center">For intsant Updates Check-out our Slack Channel Here: <button class="button is-small"><a
-                target="_blank" href="https://dialndine.slack.com/archives/C01AYQP75BM"><i
-                  class="fab fa-slack"></a></i></button></p>
-        </div>
-      </div>
-    </div>
-    <!-------------------------End of Newsletter---------------------------- -->
-  </div>
-  <!-------------------------End of Body---------------------------- -->
-
-
-  <!--------------------------------------------Footer--------------------------------->
-  <div class="partners-footer" style="border-top:solid 2px grey;">
-
-    <a href="#back-to-top"><button id="top" class="button center"><i
-          class="far fa-arrow-alt-circle-up"></i></button></a>
-
-    <footer class="footer has-text-dark">
-      <div class="container">
-        <div class="columns is-multiline is-centered">
-          <div class="column">
-            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Company</h3>
-            <nav class="footer-nav">
-              <ul>
-                <li>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="column">
-            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Help &amp; Resources</h3>
-            <nav class="footer-nav">
-              <ul>
-                <li>
-                  <a href="#">Knowledge Center</a>
-                </li>
-                <li>
-                  <a href="#">Modules</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="column">
-            <h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Legal</h3>
-            <nav class="footer-nav">
-              <ul>
-                <li>
-                  <a href="#">Policies & Procedure</a>
-                </li>
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="column resources">
-            <h3 class="pb-1  mb-0 is-size-6 has-text-weight-bold">Resources</h3>
-            <nav class="footer-nav">
-              <ul>
-                <li>
-                  <a href="#">E-Learning</a>
-                </li>
-                <li>
-                  <a href="#">References</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <br>
-
-      <p>
-        <strong>MyKPI</strong> by
-        <a href="https://github.com/Sands-45">Sands QA</a>. The source code is
-        licensed by
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. All
-        Rights Reserved, Copyright&copy;
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Dial n' Dine 2021</a>.
-      </p>
-      <i class="fab fa-slack"></i>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-whatsapp"></i>
-      <p>
-        Powered by
-        <a href="#" target="_blank" class="w3-hover-text-blue">Sands_45</a>
-      </p>
-
-    </footer>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#1c73aa" fill-opacity="1"
-        d="M0,32L21.8,80C43.6,128,87,224,131,229.3C174.5,235,218,149,262,133.3C305.5,117,349,171,393,186.7C436.4,203,480,181,524,186.7C567.3,192,611,224,655,229.3C698.2,235,742,213,785,186.7C829.1,160,873,128,916,149.3C960,171,1004,245,1047,277.3C1090.9,309,1135,299,1178,288C1221.8,277,1265,267,1309,250.7C1352.7,235,1396,213,1418,202.7L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
-      </path>
-    </svg>
-  </div>
-  <!-------------End of Page----------------->
-  <script async type="text/javascript" src="../js/bulma.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
+	<section id="menu" class="hero has-background-info-dark call-home is-info is-halfheight">
+		<div id="back-to-top" class="hero-head has-background-info-dark">
+			<nav class="navbar">
+				<div class="container">
+					<div class="navbar-brand">
+						<span class="navbar-item">
+							<a href="https://sands-45.github.io/dialndine-homepage/" target="_blank"
+								class="button has-text-white is-size-4 is-inverted has-background-info-dark">
+								<span class="icon">
+									<i class="fab fa-dyalog"></i>
+								</span>
+								<span>Dial n' Dine</span>
+							</a>
+						</span>
+						<span class="navbar-burger has-text-white" data-target="navbarMenuHeroB">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+					<div id="navbarMenuHeroB" class="navbar-menu">
+						<div class="navbar-end">
+							<div class="navbar-item has-dropdown is-hoverable">
+								<p class="navbar-item is-active"> Are You A Member ?</p>
+								<span class="navbar-item">
+									<a href="./office.html" target="_blank" class="button is-info is-inverted">
+										<span class="icon">
+											<i class="fas fa-sign-in-alt"></i>
+										</span>
+										<span>Sign-In</span>
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="hero-wave">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path fill="#1c73aa" fill-opacity="1"
+					d="M0,192L60,192C120,192,240,192,360,181.3C480,171,600,149,720,144C840,139,960,149,1080,149.3C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+				</path>
+			</svg>
+
+			<div class="hero-child">
+				<div class="hero-body">
+					<div class="container has-text-dark has-text-centered">
+						<p class="title intro is-1 has-text-dark">
+							Call Center Services
+						</p>
+						<p class="subtitle is-5  has-text-dark">
+							<small>BOOST SALES. ENHANCE CUSTOMER SERVICE. GROW YOUR BUSINESS.</small>
+						</p>
+					</div>
+				</div>
+
+				<div class="hero-foot has-text-dark">
+					<nav class="tabs is-boxed is-centered">
+						<div class="container">
+							<ul>
+								<li>
+									<a>Home</a>
+								</li>|
+								<li>
+									<a href="#services">Our Services</a>
+								</li>|
+								<li>
+									<a href="#about">About</a>
+								</li>|
+								<li>
+									<a href="#testimon">What Others Say</a>
+								</li>|
+								<li>
+									<a href="#partners">Partners</a>
+								</li>|
+								<li>
+									<a href="#partners">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+	</section>
+	</div>
+	<!------------End  of Menu----------------->
+	<section class="section body">
+		<div class="column is-four-fifths  welcome center ">
+			<div class="notification welcome  has-text-dark">
+				<div class="message-header has-background-info-dark">
+					<h2 class="title center logo-title pb-2"><i class="fas fa-chalkboard-teacher"></i>&nbsp;Welcome To
+						Dial & Dine&nbsp;<img class="logo center" src="./images/Dial n Dine Logo.png" alt="logo"
+							style="max-width: 50px;">
+					</h2>
+				</div>
+
+				<div class="columns is-fluid">
+					<div class="column is-half">
+						<h1 class="title is-4  has-text-dark"><i class="fas fa-headset"></i>&nbsp;Expert Call Center
+							Services</h1>
+						<p>Our call center services will help you drive sales, boost customer satisfaction, grow
+							your business and extend your operating hours. The possibilities are limitless. Get in
+							touch with our experts today to hear how we can help your business reach the next level
+							with our call center solutions. Get in touch with our experts today to hear how we can
+							help your business reach the next level with our call center solutions. Get in touch
+							with our experts today to hear how we can help your business reach the next level with
+							our call center solutions.</p><br>
+					</div>
+
+					<div class="column is-half">
+						<h1 class="title is-4 has-text-dark"><i class="fas fa-coins"></i>&nbsp;Benefits of Telesales
+						</h1>
+						<p>Inbound and outbound call centres gives your organisation the leg up on competition.
+							Telesales are in the fantastic position of generating leads as well as setting up
+							appointments so that sales executives can close deals faster. This simple yet effective
+							method of streamlining the entire sales process will ensure you save valuable time that
+							can be utilised elsewhere in the business. Get in touch with our experts today to hear
+							how we can help your business reach the next level with our call center solutions.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--------------------------End of Welcome----------------------------------->
+		<div id="services" class="container is-fluid center">
+			<div class="notification has-background-info-dark mt-3">
+
+				<div class="columns">
+					<div class="column is-half ">
+						<div class="notification center  sec-color about has-background-info-light">
+							<div class="columns  top-section ">
+
+								<div class="column">
+									<figure class="image m-0">
+										<img class=" ml-1 our-service" src="./images/out-services3.png">
+									</figure>
+								</div>
+
+								<div class="column">
+									<figure style="height: 100%;" class="image m-0">
+										<img class=" ml-1 our-service" src="./images/scooter.png">
+									</figure>
+								</div>
+
+								<div class="column">
+									<figure class="image  m-0">
+										<img class=" ml-1 our-service" src="./images/deilivery.png">
+									</figure>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="column m-0 is half has-text-white">
+						<h2>Our Services</h2>
+						<p class="is-7">Our call center services will help you drive sales, boost customer satisfaction,
+							grow your
+							business and extend your operating hours. The possibilities are limitless. Get in touch with
+							our experts today to hear how we can help your business reach the next level with our call
+							center solutions.Our call center services will help you drive sales, boost customer
+							satisfaction, grow your business and extend your operating hours. The possibilities are
+							limitless. Get in touch with our experts today to hear how we can help your business reach
+
+						</p><br>
+
+					</div>
+				</div>
+
+				<div class="columns is-multiline">
+
+					<div class="column is-one-quater center">
+						<div class="card service top-section  sec-color has-background-info-light has-text-dark">
+							<header class="card-header">
+								<p class="card-header-title center">
+									<i class="fas fa-users"></i>&nbsp;CLIENT CARE
+								</p>
+							</header>
+							<div class="card-content">
+								<div class="content">
+									From infrastructure to management to monthly reporting.
+									We'll ensure any type of service failure is managed to get the best possible
+									results.
+								</div>
+							</div>
+							<button class="button contact mb-3 is-info center"><a
+									href="mailto:callcenterc6@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Contact
+									Us</a></button>
+						</div>
+					</div>
+
+					<div class="column is-one-quater center">
+						<div class="card service top-section  sec-color has-background-info-light has-text-dark">
+							<header class="card-header">
+								<p class="card-header-title center">
+									<i class="fas fa-tty"></i>&nbsp;TELESALES
+								</p>
+							</header>
+							<div class="card-content">
+								<div class="content">
+									From infrastructure to management to monthly reporting.
+									We'll ensure any type of service failure is managed to get the best possible
+									results.
+								</div>
+							</div>
+							<button class="button mb-3 contact is-info center"><a
+									href="mailto:callcenterc6@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Contact
+									Us</a></button>
+						</div>
+					</div>
+
+					<div class="column is-one-quater center">
+						<div class="card service top-section  sec-color has-background-info-light has-text-dark">
+							<header class="card-header">
+								<p class="card-header-title center">
+									<i class="fas fa-question-circle"></i>&nbsp;INCIDENTS MANAGEMENT
+								</p>
+							</header>
+							<div class="card-content">
+								<div class="content">
+									From infrastructure to management to monthly reporting.
+									We'll ensure any type of service failure is managed to get the best possible
+									results.
+								</div>
+							</div>
+							<button class="button mb-3 contact is-info center"><a
+									href="mailto:callcenterc6@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Contact
+									Us</a></button>
+						</div>
+					</div>
+
+					<div class="column is-one-quater center">
+						<div class="card service top-section sec-color has-background-info-light has-text-dark">
+							<header class="card-header">
+								<p class="card-header-title center">
+									<i class="fas fa-chart-line"></i>&nbsp;PERFORMANCE MANAGEMENT
+								</p>
+							</header>
+							<div class="card-content ">
+								<div class="content">
+									From infrastructure to management to monthly reporting.
+									We'll ensure any type of service failure is managed to get the best possible
+									results.
+								</div>
+							</div>
+							<button class="button mb-3 contact is-info center"><a
+									href="mailto:callcenterc6@gmail.com"><i class="fas fa-envelope"></i>&nbsp;Contact
+									Us</a></button>
+						</div>
+					</div>
+				</div>
+				<!-----------------------------------End of Services-------------------------------->
+				<section class="section">
+					<div id="about" class="container is-fluid about1">
+						<div class="notification about-section has-text-white">
+							<h1 class="title has-text-white is-3 center has-text-weight-bold"><i
+									class="fas fa-building"></i>&nbsp;About</h1>
+							<p>Dial n Dine is a national call centre geared to meet the online/telephonic ordering and
+								customer-engagement needs of retail food both on delivery and on collection.The main
+								focus of
+								the call centre is to get and keep customers supporting the business and increasing
+								growth in
+								sales. However the call centre does not focus only on customers but also it relieves the
+								pressure from different stores that offer delivery/collection on a day to day basis.
+								This
+								particular call centre takes calls for Debonairs, Steers and Fishaways. These are all
+								franchises
+								of Famous Brands</p>
+						</div>
+					</div>
+
+					<u>
+						<h2 class="title center has-text-white">Our Team</h2>
+					</u><br>
+					<div class="columns mt-1">
+
+						<div class="column is-one-quarter">
+							<div class="card our-team has-background-info-light">
+								<img src="./images/teamwork.jpg" alt="John" style="width:100%">
+								<h1 class="is-size-4">Steven Ferreira</h1>
+								<p class="title">CEO</p>
+								<p>Dail n Dine</p>
+								<div style="margin: 24px 0;">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+									<a href="#"><i class="fab fa-twitter-square"></i></a>
+									<a href="#"><i class="fab fa-facebook-square"></i></a>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="column is-one-quarter">
+							<div class="card our-team has-background-info-light">
+								<img src="./images/teamwork.jpg" alt="John" style="width:100%">
+								<h1 class="is-size-4">Nomsa Nxumalo</h1>
+								<p class="title">Senior Manager</p>
+								<p>Dail n Dine</p>
+								<div style="margin: 24px 0;">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+									<a href="#"><i class="fab fa-twitter-square"></i></a>
+									<a href="#"><i class="fab fa-facebook-square"></i></a>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="column is-one-quarter">
+							<div class="card our-team has-background-info-light">
+								<img src="./images/teamwork.jpg" alt="John" style="width:100%">
+								<h1 class="is-size-4">Junior Managers</h1>
+								<p class="title">Supervisors</p>
+								<p>Dail n Dine</p>
+								<div style="margin: 24px 0;">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+									<a href="#"><i class="fab fa-twitter-square"></i></a>
+									<a href="#"><i class="fab fa-facebook-square"></i></a>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="column is-one-quarter">
+							<div class="card our-team has-background-info-light">
+								<img src="./images/teamwork.jpg" alt="John" style="width:100%">
+								<h1 class="is-size-4">Quality Team</h1>
+								<p class="title">Qualit Assurance</p>
+								<p>Dail n Dine</p>
+								<div style="margin: 24px 0;">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+									<a href="#"><i class="fab fa-twitter-square"></i></a>
+									<a href="#"><i class="fab fa-facebook-square"></i></a>
+									<a href="#"><i class="fab fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+			</div>
+		</div>
+		<!------------------------------Tesimonials-------------------------------->
+		<section class="section">
+			<div id="testimon" class="container testinimon has-background-info pt-3 ">
+
+				<div class="message-header m-5  has-background-info-dark">
+					<h1 class="title has-text-white is-3 center has-text-weight-bold"><i
+							class="fas fa-comment-alt"></i>&nbsp;Testimonials</h1>
+				</div>
+
+				<div class="columns is-multline pl-5 pr-5">
+					<div class="column is-one-quater">
+						<div class="box has-background-info-light sec-color has-text-grey-dark">
+							<p>
+								<span class="font-bold has-text-dark is-size-4">
+									“
+								</span>
+								To get social media testimonials like these, keep your customers engaged with your
+								social
+								media
+								accounts by posting regularly yourself
+								<span class="font-bold has-text-dark is-size-4">
+									”
+								</span>
+							</p>
+							<div class="is-flex is-align-items-center is-justify-content-start mt-4">
+								<a href="#" class="image is-48x48">
+									<img class="is-rounded" alt="profil"
+										src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1034&q=80"
+										class="is-rounded" />
+								</a>
+								<div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+									<span class="font-semibold has-text-weight-bold">
+										Jean Miguel
+									</span>
+									<span class="is-size-7 is-flex is-align-items-center">
+										Mr Dial n Dine
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-one-quater">
+						<div class="box has-background-info-light  sec-color has-text-grey-dark">
+							<p>
+								<span class="font-bold has-text-dark is-size-4">
+									“
+								</span>
+								To get social media testimonials like these, keep your customers engaged with your
+								social
+								media
+								accounts by posting regularly yourself
+								<span class="font-bold has-text-dark is-size-4">
+									”
+								</span>
+							</p>
+							<div class="is-flex is-align-items-center is-justify-content-start mt-4">
+								<a href="#" class="image is-48x48">
+									<img class="is-rounded" alt="profil"
+										src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1034&q=80"
+										class="is-rounded" />
+								</a>
+								<div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+									<span class="font-semibold has-text-weight-bold">
+										Jean Miguel
+									</span>
+									<span class="is-size-7 is-flex is-align-items-center">
+										Mr Dial n Dine
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-one-quater">
+						<div class="box has-background-info-light  sec-color has-text-grey-dark">
+							<p>
+								<span class="font-bold has-text-dark is-size-4">
+									“
+								</span>
+								To get social media testimonials like these, keep your customers engaged with your
+								social
+								media
+								accounts by posting regularly yourself
+								<span class="font-bold has-text-dark is-size-4">
+									”
+								</span>
+							</p>
+							<div class="is-flex is-align-items-center is-justify-content-start mt-4">
+								<a href="#" class="image is-48x48">
+									<img class="is-rounded" alt="profil"
+										src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1034&q=80"
+										class="is-rounded" />
+								</a>
+								<div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+									<span class="font-semibold has-text-weight-bold">
+										Jean Miguel
+									</span>
+									<span class="is-size-7 is-flex is-align-items-center">
+										Mr Dial n Dine
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-one-quater">
+						<div class="box has-background-info-light  sec-color has-text-grey-dark">
+							<p>
+								<span class="font-bold has-text-dark is-size-4">
+									“
+								</span>
+								To get social media testimonials like these, keep your customers engaged with your
+								social
+								media
+								accounts by posting regularly yourself
+								<span class="font-bold has-text-dark is-size-4">
+									”
+								</span>
+							</p>
+							<div class="is-flex is-align-items-center is-justify-content-start mt-4">
+								<a href="#" class="image is-48x48">
+									<img class="is-rounded" alt="profil"
+										src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1034&q=80"
+										class="is-rounded" />
+								</a>
+								<div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+									<span class="font-semibold has-text-weight-bold">
+										Jean Miguel
+									</span>
+									<span class="is-size-7 is-flex is-align-items-center">
+										Mr Dial n Dine
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------------------------------------Partners----------------------------------->
+
+		<section class="section">
+			<div id="partners" class="container has-background-info-dark  is-fluid pt-4">
+				<div class="columns">
+					<div class="column mt-5 is-half p-5">
+						<span class="center subtitle">
+							<h1 class="title has-text-white is-2 mt-5 center has-text-weight-bold"><i
+									class="fas fa-handshake"></i>&nbsp;Partners
+							</h1>
+						</span>
+						<div class="columns center">
+							<div class="column is-half">
+
+								<figure class="image m-0">
+									<img class=" ml-1"
+										src="https://famousbrands.co.za/wp-content/themes/famous/images/logo.png">
+								</figure>
+							</div>
+
+							<div class="column is-half">
+								<figure class="image m-0">
+									<img class=" ml-1"
+										src="https://debonairspizza.co.za/images/static/debonairs-logo.svg">
+								</figure>
+							</div>
+						</div>
+
+						<div class="columns  center">
+							<div class="column is-half">
+								<figure class="image m-0">
+									<img class=" ml-1 " src="https://app.fishaways.co.za/img/logo.606f1234.png">
+								</figure>
+							</div>
+
+							<div class="column is-half">
+								<figure class="image m-0">
+									<img class=" ml-1" src="https://app.steers.co.za/img/logo.142a187c.png">
+								</figure>
+							</div>
+						</div>
+					</div>
+					<!-------------------------------------------Form  ---------------------------->
+					<div class="column mt-5  p-5 is-half">
+						<span class="center subtitle">
+							<h1 class="title has-text-white is-2 mt-5 center has-text-weight-bold"><i
+									class="fas fa-comments-dollar"></i>&nbsp;Contact Us
+							</h1>
+						</span>
+						<div id="form" class="container my-5  mx-5 px-5 p-3 has-background-info-dark has-text-white">
+							<form class="has-background-info-dark p-3" action="" method="post" class="box">
+								<div class="field">
+									<label class="label is-size-6 has-text-white has-text-weight-light">Name &
+										Surname</label>
+									<div class="control">
+										<input class="input is-focused" type="text" placeholder="Your Name">
+									</div>
+								</div>
+								<div class="field">
+									<label class="label is-size-6 has-text-white has-text-weight-light">Email</label>
+									<div class="control">
+										<input class="input" type="email" placeholder="e.g. alex@example.com">
+									</div>
+								</div>
+								<div class="field">
+									<label for="message"
+										class="label is-size-6 has-text-white has-text-weight-light">Message</label>
+									<textarea name="message" id="message" rows="2" class="textarea is-medium"
+										placeholder="Message" style="resize: none;"></textarea>
+								</div>
+								<button class="button center has-background-dark has-text-white">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<!-------------------------footer------------------------------------------->
+	<div class="partners-footer">
+		<footer class="footer has-text-dark">
+			<div class="container">
+				<div class="columns is-multiline is-centered">
+					<div class="column is-one-fifth">
+						<div class="columns">
+							<div class="column">
+								<a class="is-left" href="#" class="logo is-flex is-centered">
+									<img alt="Dial & Dine" src="./images/Dial n Dine Logo.png" height="35" width="50">
+								</a>
+							</div>
+							<div class="column is-three-quarters">
+								<p class="is-size-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+									quas illo
+									praesentium omnis atque repudiandae, ipsa facilis necessitatibus accusantium. </p>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Company</h3>
+						<nav class="footer-nav">
+							<ul>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="column">
+						<h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Help &amp; Resources</h3>
+						<nav class="footer-nav">
+							<ul>
+								<li>
+									<a href="#">Knowledge Center</a>
+								</li>
+								<li>
+									<a href="#">Modules</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="column">
+						<h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Legal</h3>
+						<nav class="footer-nav">
+							<ul>
+								<li>
+									<a href="#">Policies & Procedure</a>
+								</li>
+								<li>
+									<a href="#">Terms & Conditions</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="column">
+						<h3 class="pb-1 mb-0 is-size-6 has-text-weight-bold">Resources</h3>
+						<nav class="footer-nav">
+							<ul>
+								<li>
+									<a href="#">E-Learning</a>
+								</li>
+								<li>
+									<a href="#">References</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#1c73aa" fill-opacity="1"
+				d="M0,32L21.8,80C43.6,128,87,224,131,229.3C174.5,235,218,149,262,133.3C305.5,117,349,171,393,186.7C436.4,203,480,181,524,186.7C567.3,192,611,224,655,229.3C698.2,235,742,213,785,186.7C829.1,160,873,128,916,149.3C960,171,1004,245,1047,277.3C1090.9,309,1135,299,1178,288C1221.8,277,1265,267,1309,250.7C1352.7,235,1396,213,1418,202.7L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+			</path>
+		</svg>
+	</div>
+
+	<a href="#back-to-top"><button id="top" class="button center"><i
+				class="far fa-arrow-alt-circle-up"></i></button></a>
+	<!-------------End of Page----------------->
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
