@@ -18,7 +18,7 @@
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <span class="navbar-item">
+            <span class="ml-3 navbar-item">
               <a href="./index.html" target="_blank"
                 class="button has-text-white is-size-4 is-inverted has-background-info-dark">
                 <span class="icon">
@@ -123,7 +123,7 @@
             <li class="tab is-active" onclick="openTab(event,'over')">
               <a><i class="fas fa-network-wired"></i>&nbsp;Overview</a>
             </li>
-            <li class="tab" onclick='openTab(event,"perf");myFunction1();refreshIframe()'>
+            <li id="perf-btn" class="tab" onclick='openTab(event,"perf");myFunction1();refreshIframe()'>
               <a><i class="fas fa-chart-area"></i>&nbsp;Performances</a>
             </li>
             <li class="tab" onclick="openTab(event,'proj')">
@@ -144,7 +144,11 @@
     </div>
   </section>
   <!---------End of Hero Section-------->
+
+  <!-------------------------Start of Body---------------------------- -->
   <div class="container section">
+
+    <!-------------------------Start of Overview---------------------------- -->
     <div id="over" class="content-tab">
 
       <div class="columns center">
@@ -323,9 +327,11 @@
     </div>
     <!----------End of Overview------------->
 
+    <!-------------------------Start of Performances---------------------------- -->
     <div id="perf" class="content-tab is-fluid" style="display: none">
       <div class="columns mt-5 perf-tab">
 
+        <!-------------------------Dashboard Side Nav---------------------------- -->
         <div id="sidenav" class="column sidenav is-1.5 has-background-info-dark">
           <button class="button has-text-white is-medium center mb-3 mt-5 is-inverted has-background-info-dark">
             <span class="icon">
@@ -407,9 +413,12 @@
               </ul>
           </aside>
         </div>
-        <!-------------------------Dashboard ---------------------------- -->
+        <!-------------------------End of Dashboard Side Nav---------------------------- -->
+
+        <!-------------------------End of Dashboard ---------------------------- -->
         <div class="column dash-content has-background-info-dark ml-1 is-9">
 
+          <!-------------------------Restricted Dashboards---------------------------- -->
           <div id="pass-box" class=" has-background-info-dark">
             <button onclick="document.getElementById('pass-box').style.display= 'none';
             document.getElementById('sidenav').style.pointerEvents='inherit';" class="delete"></button>
@@ -485,6 +494,7 @@
                 class="button center has-background-black-ter has-text-white">SUBMIT</button>
             </form>
           </div>
+          <!-------------------------End of Restricted Dashboards ---------------------------- -->
 
           <section class="hero has-background-black-ter dash-top is-small">
             <div class="hero-body">
@@ -532,77 +542,13 @@
           </div>
         </div>
       </div>
-
-      <article class="media mt-5 is-fluid">
-        <div class="columns is-fluid  has-background-info-dark">
-          <div class="colunm m-2 is-one-third is-link">
-            <div id="data" class="card has-background-info-dark">
-              <header class="card-header">
-                <p class="card-header-title center">
-                  Why Data Is Important
-                </p>
-              </header>
-              <div class="card-content has-text-white">
-                <div class="content">
-                  Today, gathering data to help you better understand your customers and business is relatively
-                  easy. It’s become so easy that there’s the danger of having too much data to analyze. But to
-                  take full advantage of data and analytics, you need to know how to get the most value from your
-                  data.<br>
-                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="colunm m-2 is-one-third">
-            <div id="data" class="card has-background-info-dark">
-              <header class="card-header">
-                <p class="card-header-title center">
-                  Data In Decision Making
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content has-text-white">
-                  While the average small business has less self-generated data than big players. . .this doesn’t
-                  mean big data is off-limits to them. It is more suitable for small businesses to collect big
-                  data because they’re generally more agile, enabling them to act more quickly on data-driven
-                  insights.<br>
-                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="colunm m-2 is-one-third">
-            <div id="data" class="card has-background-info-dark">
-              <header class="card-header">
-                <p class="card-header-title center">
-                  What Others Say
-                </p>
-              </header>
-              <div class="card-content has-text-white">
-                <div class="content">
-                  A Forbes article discussing a survey from Deloitte, notes that “49 percent of respondents said
-                  analytics helps them make better decisions, 16 percent say that it better enables key strategic
-                  initiatives, and 10 percent say it helps them improve relationships with both customers and
-                  business partners.<br>
-                  <a href="#">@dialndine</a>. <a href="#">#quality</a> <a href="#">#performances</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2021</time>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
+      <!------------------------- End of Dashboards ---------------------------- -->
     </div>
     <!-----------End of performances-------------->
 
+
+
+    <!-------------------------Start of Projects---------------------------- -->
     <div id="proj" class="content-tab is-fluid" style="display: none">
 
       <section class="section has-background-info">
@@ -941,9 +887,10 @@
         </div>
       </section>
     </div>
-
     <!--------------End of projects----------------->
 
+
+    <!-------------------------Start of Incentives---------------------------- -->
     <div id="incent" class="content-tab center" style="display: none">
       <div class="container has-background-info">
 
@@ -1081,6 +1028,7 @@
     </div>
     <!------------------------End of Incentive------------------------->
 
+    <!-------------------------Start of Schedules---------------------------- -->
     <div id="sched" class="content-tab" style="display: none">
       <h1 class="center">Demo Calendar</h1>
 
@@ -1140,6 +1088,8 @@
       </ul>
     </div>
     <!-----------------------End of Schedules--------------------------->
+
+    <!-------------------------Start of Newsletter---------------------------- -->
     <div id="news" class="content-tab has-background-info-light" style="display: none">
       <div class="message-header has-background-info">
         <h2 class="title center has-text-white pb-2"><i class="far fa-newspaper"></i>&nbsp;Newsletter</h2>
@@ -1203,13 +1153,14 @@
                 target="_blank" href="https://dialndine.slack.com/archives/C01AYQP75BM"><i
                   class="fab fa-slack"></a></i></button></p>
         </div>
-
-
       </div>
     </div>
+    <!-------------------------End of Newsletter---------------------------- -->
   </div>
+  <!-------------------------End of Body---------------------------- -->
 
-  <!--------------------------------------------Footer          -->
+
+  <!--------------------------------------------Footer--------------------------------->
   <div class="partners-footer" style="border-top:solid 2px grey;">
 
     <a href="#back-to-top"><button id="top" class="button center"><i
