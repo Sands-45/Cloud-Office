@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -629,6 +629,27 @@ ul {
   display: none !important;
 }
 /* Delete Button*/
-.delete{
+.delete {
   float: right;
+}
+/* Drop Down*/
+#dropdown {
+  position: relative;
+  color: #fff;
+}
+#dropdown-content {
+  position: absolute;
+  top: 70%;
+  left: -40%;
+  background: lightblue;
+  color: black;
+  padding: 0.5rem;
+  display: none;
+}
+#dropdown-content li {
+  border-bottom: 2px #666 solid;
+}
+.forms-content {
+  background: transparent !important;
+  height: 40vw;
 }
