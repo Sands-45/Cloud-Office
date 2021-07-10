@@ -641,8 +641,9 @@ ul {
   position: absolute;
   top: 70%;
   left: -40%;
-  background: lightblue;
-  color: black;
+  background: #1d72aa;
+  color: white;
+  border-radius: 0.5rem;
   padding: 0.5rem;
   display: none;
 }
