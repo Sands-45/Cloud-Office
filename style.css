@@ -81,7 +81,7 @@ html {
 }
 .over-section .columns,
 .content {
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem;
 }
 .bottom-overview {
   background: #bad5e7 !important;
@@ -175,20 +175,15 @@ html {
 /*=========== End of overview Section ========*/
 
 /* ==========Performances =============*/
-.dashboard {
-  position: -webkit-sticky !important; /* Safari */
-  position: sticky !important;
-  top: 0 !important;
-}
 aside li a {
   color: white !important;
-  border-left: solid 2px black !important;
+  border-left: solid 2px black;
   margin: 5px;
   transition: background-color 1s, margin-left 0.5s;
 }
 aside li a:hover {
   color: black !important;
-  margin-left: 2px !important;
+  margin-left: 2px;
 }
 aside p {
   color: rgb(41, 37, 37) !important;
@@ -198,27 +193,27 @@ aside p {
 .container,
 section,
 .iframe-container {
-  border-radius: 0.3rem !important;
+  border-radius: 0.3rem;
 }
 .w3-modal-content,
 iframe,
 embed {
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem;
 }
 .menu-list .is-active1 a,
 li .is-active1 {
-  background: #01b1ff !important;
+  background: #01b1ff;
   color: #000000 !important;
 }
 /*------------Dashboards--------------*/
 .is-fullwidth {
   margin: 0;
-  padding: 1px !important;
+  padding: 1px;
   border: 0;
 }
 .iframe-container {
   min-height: 100px;
-  background: #242424 url("./images/preloader.gif") no-repeat 50% center !important;
+  background: #242424 url("./images/preloader.gif") no-repeat 50% center;
 }
 iframe {
   overflow: hidden !important;
@@ -233,17 +228,17 @@ iframe {
 #pass-box2,
 #pass-box3 {
   box-sizing: border-box;
-  height: 20%;
+  height: 30%;
   width: 25%;
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   border-radius: 0.5rem;
+  padding: 0.5%;
   display: none;
-  padding: 2% !important;
-}
-#confirm-pass {
-  display: none !important;
+
+  z-index: 99;
+  background: #0967a1;
 }
 /* Delete Button*/
 .delete {
@@ -615,12 +610,12 @@ a:hover {
     max-width: 50px !important;
   }
   .footer .column {
-    border-left: 0 !important;
-    border-radius: 0 !important;
+    border-left: 0;
+    border-radius: 0;
   }
   .resources {
-    border-right: 0 !important;
-    border-radius: 0 !important;
+    border-right: 0;
+    border-radius: 0;
   }
 }
 /* Overview wave Shrinking for mobile*/
@@ -641,9 +636,6 @@ a:hover {
 }
 /*Dashboads Media screen */
 @media screen and (max-width: 1406px) {
-  #dashboard-container {
-    height: 55vh !important;
-  }
   #sidenav li {
     font-size: 0.8rem;
   }
@@ -656,7 +648,7 @@ a:hover {
     width: 13.1%;
   }
   .perf-tab {
-    display: none !important;
+    display: none;
   }
 
   @media screen and (max-width: 420px) {
@@ -670,7 +662,7 @@ a:hover {
   }
   #perf,
   #perf-btn {
-    display: none !important;
+    display: none;
   }
 }
 
