@@ -215,8 +215,14 @@ li .is-active1 {
   min-height: 100px;
   background: #242424 url("./images/preloader.gif") no-repeat 50% center;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+iframe::-webkit-scrollbar {
+  display: none;
+}
 iframe {
-  overflow: hidden !important;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 }
 .iframe-container::-webkit-scrollbar {
   width: 0px;
