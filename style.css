@@ -198,7 +198,7 @@ section,
 .w3-modal-content,
 iframe,
 embed {
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 .menu-list .is-active1 a,
 li .is-active1 {
@@ -215,14 +215,8 @@ li .is-active1 {
   min-height: 100px;
   background: #242424 url("./images/preloader.gif") no-repeat 50% center;
 }
-/* Hide scrollbar for Chrome, Safari and Opera */
-iframe::-webkit-scrollbar {
-  display: none;
-}
 iframe {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  overflow: hidden !important;
 }
 .iframe-container::-webkit-scrollbar {
   width: 0px;
@@ -298,74 +292,7 @@ article,
 /*=========== End of incentives ========*/
 
 /*===========Schedules===========*/
-ul {
-  list-style-type: none;
-  box-sizing: border-box;
-}
 
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: #1a89bc;
-  text-align: center;
-}
-
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 12px;
-  color: #777;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important;
-}
 /*==========End of Schedules=========*/
 
 /*=========== Newsletter ========*/
@@ -646,70 +573,46 @@ a:hover {
     font-size: 0.8rem;
   }
 }
-
-/* ========== Schedules Add media queries for smaller screens ========== */
-@media screen and (max-width: 800px) {
-  .weekdays li,
-  .days li {
-    width: 13.1%;
-  }
-  .perf-tab {
-    display: none;
-  }
-
-  @media screen and (max-width: 420px) {
-    .weekdays li,
-    .days li {
-      width: 12.5%;
-    }
-    .days li .active {
-      padding: 2px;
-    }
-  }
+@media screen and (max-width: 420px) {
   #perf,
   #perf-btn {
     display: none;
   }
 }
+/*=======Collapse=========*/
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .navbar > .container {
+    align-items: stretch;
+    display: flex;
+    min-height: 3.25rem;
+    width: 100%;
+  }
+  .navbar-burger {
+    display: none;
+  }
+  .navbar-menu {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .navbar,
+  .navbar-end,
+  .navbar-menu,
+  .navbar-start {
+    display: flex;
+    align-items: stretch;
+  }
 
-@media screen and (max-width: 290px) {
-  .weekdays li,
-  .days li {
-    width: 12.2%;
+  .navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .navbar-item {
+    display: flex;
+    align-items: center;
   }
 }
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-    .navbar>.container {
-        align-items: stretch;
-        display: flex;
-        min-height: 3.25rem;
-        width: 100%;
-    }
-    .navbar-burger {
-        display: none;
-    }
-    .navbar-menu {
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-        justify-content: flex-end;
-        flex-grow: 1;
-        flex-shrink: 0;
-    }
-    .navbar, .navbar-end, .navbar-menu, .navbar-start {
-        display: flex;
-        align-items: stretch;
-    }
-
-    .navbar-end {
-    	justify-content: flex-end;
-    margin-left: auto;
-    }
-
-    .navbar-item {
-        display: flex;
-        align-items: center;
-    }
-}
-
